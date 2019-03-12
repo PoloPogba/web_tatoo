@@ -5,202 +5,162 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+      <div class="container">
+          <div class="navbar-translate">
+              <a class="navbar-brand" href="http://demos.creative-tim.com/marketplace/now-ui-kit-pro/presentation.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom">
+                  Now Ui Kit Pro
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-bar bar1"></span>
+                  <span class="navbar-toggler-bar bar2"></span>
+                  <span class="navbar-toggler-bar bar3"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" href="" data-toggle="dropdown">
+                    <i class="now-ui-icons design_app"></i>
+                    <p>Components</p>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./index.html">
+                      <i class="now-ui-icons business_chart-pie-36"></i>
+                      All Components
+                    </a>
+                    <a class="dropdown-item" href="https://creativetimofficial.github.io/now-ui-kit-pro/#/components?ref=nuk-pro-doc">
+                      <i class="now-ui-icons files_single-copy-04"></i>
+                      Documentation
+                    </a>
+                  </div>
+                </li>
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                          <i class="now-ui-icons files_paper" aria-hidden="true"></i>
+                          <p>Sections</p>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./sections.html#headers">
+                              <i class="now-ui-icons shopping_box"></i> Headers
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#features">
+                              <i class="now-ui-icons ui-2_settings-90"></i> Features
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#blogs">
+                              <i class="now-ui-icons text_align-left"></i> Blogs
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#teams">
+                              <i class="now-ui-icons sport_user-run"></i> Teams
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#projects">
+                              <i class="now-ui-icons education_paper"></i> Projects
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#pricing">
+                              <i class="now-ui-icons business_money-coins"></i> Pricing
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#testimonials">
+                              <i class="now-ui-icons ui-2_chat-round"></i> Testimonials
+                          </a>
+                          <a class="dropdown-item" href="./sections.html#contactus">
+                              <i class="now-ui-icons tech_mobile"></i> Contact Us
+                          </a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                          <i class="now-ui-icons design_image" aria-hidden="true"></i>
+                          <p>Examples</p>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="./examples/about-us.html">
+                              <i class="now-ui-icons business_bulb-63"></i> About-us
+                          </a>
+                          <a class="dropdown-item" href="./examples/blog-post.html">
+                              <i class="now-ui-icons text_align-left"></i> Blog Post
+                          </a>
+                          <a class="dropdown-item" href="./examples/blog-posts.html">
+                              <i class="now-ui-icons design_bullet-list-67"></i> Blog Posts
+                          </a>
+                          <a class="dropdown-item" href="./examples/contact-us.html">
+                              <i class="now-ui-icons location_pin"></i> Contact Us
+                          </a>
+                          <a class="dropdown-item" href="./examples/landing-page.html">
+                              <i class="now-ui-icons education_paper"></i> Landing Page
+                          </a>
+                          <a class="dropdown-item" href="./examples/login-page.html">
+                              <i class="now-ui-icons users_circle-08"></i> Login Page
+                          </a>
+                          <a class="dropdown-item" href="./examples/pricing.html">
+                              <i class="now-ui-icons business_money-coins"></i> Pricing
+                          </a>
+                          <a class="dropdown-item" href="./examples/ecommerce.html">
+                              <i class="now-ui-icons shopping_shop"></i> Ecommerce Page
+                          </a>
+                          <a class="dropdown-item" href="./examples/product-page.html">
+                              <i class="now-ui-icons shopping_bag-16"></i> Product Page
+                          </a>
+                          <a class="dropdown-item" href="./examples/profile-page.html">
+                              <i class="now-ui-icons users_single-02"></i> Profile Page
+                          </a>
+                          <a class="dropdown-item" href="./examples/signup-page.html">
+                              <i class="now-ui-icons tech_mobile"></i> Signup Page
+                          </a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+      <div class="page-header clear-filter" filter-color="greenblue">
+          <div class="page-header-image" data-parallax="true" style="background-image: ;">
+          </div>
+          <div class="rellax-header rellax-header-sky" data-rellax-speed="-8">
+              <div class="page-header-image" style="background-image: url('./assets/img/presentation-page/nuk-pro-back-sky.jpg')">
+              </div>
+          </div>
+          <div class="rellax-header rellax-header-buildings" data-rellax-speed="0">
+              <div class="page-header-image page-header-city" style="background-image: url('./assets/img/presentation-page/nuk-pro-buildings.png')">
+              </div>
+          </div>
+          <div class="rellax-text-container">
+              <h1 class="h1-seo rellax-text" data-rellax-speed="-2">Components</h1>
+          </div>
+          <h3 class="h3-description rellax-text" data-rellax-speed="-1">A beautiful premium Bootstrap 4 UI Kit.</h3>
+          <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">Designed by
+              <a href="http://invisionapp.com/">
+                  <img src="./assets/img/invision-white-slim.png" class="invision-logo" />
+              </a>. Coded by
+              <a href="https://www.creative-tim.com">
+                  <img src="./assets/img/creative-tim-white-slim2.png" class="creative-tim-logo" />
+              </a>.</h6>
+      </div>
+        </div>
     <%= yield %>
-    <body>
-
-    <header>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-12">
-    				<a href="/" class="logo-link">
-    					<img class="responsive" src="upload/layout/logo-myfondue.svg" alt="">
-    				</a>
-    								<button class="nav-toggle" type="button">
-    					<span>
-    						<span class="line"></span>
-    						<span class="line"></span>
-    						<span class="line"></span>
-    					</span>
-    				</button>
-    			</div>
-    		</div>
-    	</div>
-    </header>
-
-    <div id="home-navigation">
-    	<ul class="nav">
-    		<li class="nav-item"><a class="nav-link" href="#slide-1">Mischen</a></li>
-    		<li class="nav-item"><a class="nav-link" href="#slide-2">Liefern</a></li>
-    		<li class="nav-item"><a class="nav-link" href="#slide-3">Geniessen</a></li>
-    	</ul>
-    </div>
-    <div id="slide-1" class="slider-container">
-    	<div class="royalSlider rsDefault">
-    					<div class="slider-slide" style="background-color: #dcc3c3;">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
-    							<img class="slider-image responsive" src="https://www.myfondue.shop/cms/cache/6569b2c1db0a211edb91c6790742e5e6.jpg" alt=""/>
-    						</div>
-
-    						<div class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
-    							<h1>Mische dein eigenes Fondue</h1>
-    							<p>Wir mischen fixfertige Fonduemischungen. W&auml;hle aus &uuml;ber 45 hochwertigen, regionalen und exklusiven Zutaten. Ganz nach deinem Geschmack.</p>
-    							<p><a class="button" href="/meine-fonduemischung/">Los geht’s</a></p>
-    						</div>
-
-    					</div>
-    				</div>
-    			</div>
-    					<div class="slider-slide" style="background-color: #e4f0d8;">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
-    							<img class="slider-image responsive" src="https://www.myfondue.shop/cms/cache/51efd4d8fad3cb14db626c944e5a323e.jpg" alt=""/>
-    						</div>
-
-    						<div class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
-    							<h1>Mische dein eigenes Fondue</h1>
-    							<p>Wir mischen fixfertige Fonduemischungen. W&auml;hle aus &uuml;ber 45 hochwertigen, regionalen und exklusiven Zutaten. Ganz nach deinem Geschmack.</p>
-    							<p><a class="button" href="/meine-fonduemischung/">Los geht’s</a></p>
-    						</div>
-
-    					</div>
-    				</div>
-    			</div>
-    					<div class="slider-slide" style="background-color: #e9fbff;">
-    				<div class="container">
-    					<div class="row">
-    						<div class="col-12 order-md-1 col-md-6 col-xl-7 col-xxl-8 align-self-center">
-    							<img class="slider-image responsive" src="https://www.myfondue.shop/cms/cache/d1971aa5a3817c02434cb373d9d5c290.jpg" alt=""/>
-    						</div>
-
-    						<div class="col-12 order-md-0 col-md-6 col-xl-5 col-xxl-4 align-self-center slider-text">
-    							<h1>Mische dein eigenes Fondue</h1>
-    							<p>Wir mischen fixfertige Fonduemischungen. W&auml;hle aus &uuml;ber 45 hochwertigen, regionalen und exklusiven Zutaten. Ganz nach deinem Geschmack.</p>
-    							<p><a class="button" href="/meine-fonduemischung/">Los geht’s</a></p>
-    						</div>
-
-    					</div>
-    				</div>
-    			</div>
-    			</div>
-    </div>
-    <main>
-    	<div id="slide-2" class="container">
-    	<div class="row push-bottom">
-    		<div class="col-8 offset-2 col-md-6 offset-md-0">
-
-    							<img src="https://www.myfondue.shop/cms/upload/bilder/home/verpackung-2.gif"
-    				     srcset="https://www.myfondue.shop/cms/upload/bilder/home/verpackung-2.gif 767w, https://www.myfondue.shop/cms/upload/bilder/home/verpackung-2.gif 768w"
-    				     sizes="(max-width: 767px) 767px, 768px"
-    				     alt=""
-    				     class="responsive">
-    					</div>
-    		<div class="col-12 col-md-6 offset-md-0 col-lg-4 offset-lg-1 xs-push-top sm-push-top">
-    			<h3>Lass dir dein Fondue nach Hause liefern</h3>
-    <p>Wir sorgen f&uuml;r die frische Produktion und Lieferung innert 3-4 Arbeitstagen. Alle Zutaten werden zu einem fixfertigen Frischfondue mit einer Haltbarkeit von min. 15 Tagen gemischt.</p>
-    			<div class="row">
-    				<div class="col-10 offset-1 col-md-12 offset-md-0">
-    					<div id="kaesepost" class="gutter-top"></div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>	<div id="slide-3" class="bg-beige">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-12 offset-md-1 col-md-10 push-top">
-    				<h3>Einladen, zur&uuml;cklehnen und geniessen</h3>
-    <p>Und nat&uuml;rlich unter dem Hashtag <a target="_blank" href="https://www.instagram.com/explore/tags/myfondue/">#myfondue</a>&nbsp;auf deinen Social Media Profilen teilen.</p>
-    			</div>
-    		</div>
-    	</div>
-
-    	<div class="home-fondue text-center">
-    		<img class="fondue-pfanne" src="upload/bilder/home/fonduepfanne.jpg" alt="">
-
-    		<img class="hand first" data-rellax-speed="7" src="upload/bilder/home/hand.png" alt=""
-    		     data-paroller-factor="-0.1"
-    		     data-paroller-type="foreground"
-    		     data-paroller-direction="horizontal">
-    		<img class="hand second" data-rellax-speed="7" src="upload/bilder/home/hand-2.png" alt=""
-    		     data-paroller-factor="0.1"
-    		     data-paroller-type="foreground"
-    		     data-paroller-direction="horizontal">
-    		<img class="hand third" data-rellax-speed="7" src="upload/bilder/home/hand-3.png" alt=""
-    		     data-paroller-factor="0.1"
-    		     data-paroller-type="foreground"
-    		     data-paroller-direction="horizontal">
-
-    		<img class="messer" src="upload/bilder/home/illu-messer.svg" alt="">
-    		<img class="getraenk" src="upload/bilder/home/illu-getraenk.svg" alt="">
-    		<img class="gabel" src="upload/bilder/home/illu-gabel.svg" alt="">
-    		<img class="brot" src="upload/bilder/home/illu-brot.svg" alt="">
-    		<img class="brote" src="upload/bilder/home/illu-brote.svg" alt="">
-    		<img class="text" src="upload/bilder/home/werhetsbrotverlore.svg" alt="">
-    	</div>
-
-    	<div class="container">
-    		<div class="row gutter-top">
-    			<div class="col-12">
-    				<hr>
-    			</div>
-    		</div>
-    	</div>
-    </div>							</main>
-
-    <footer>
-    	<div class="container">
-    	<div class="row">
-
-    		<div class="col-7 col-sm-auto order-sm-1 col-md-auto order-md-1 align-self-sm-center">
-    			<p>
-    				<a href="tel:+41 55 412 68 83">+41 55 412 68 83</a><br/>
-    				<a href="mailto:info@myfondue.shop">info@myfondue.shop</a>
-    			</p>
-    		</div>
-
-    		<div class="col-5 col-sm-auto order-sm-2 col-md-auto order-md-3 ml-md-auto align-self-sm-center">
-    			<a href="/agb.html">AGB</a><br/>
-    			<a href="/impressum.html">Impressum</a>
-    		</div>
-
-    		<div class="col-6 col-sm-auto order-sm-3 text-sm-right col-md-auto order-md-2 align-self-sm-center xs-push-top">
-    			<a href="https://de-de.facebook.com/Milchmanufaktur/" target="_blank" class="social-link">
-    				<img class="responsive" src="upload/layout/facebook-icon.svg" alt="">
-    			</a>
-    			<a href="https://www.instagram.com/milchmanufaktureinsiedeln/" target="_blank" class="social-link">
-    				<img class="responsive" src="upload/layout/instagram-icon.svg" alt="">
-    			</a>
-    		</div>
-
-    		<div class="col-6 col-sm-auto col-md-auto
-    			  order-sm-4
-    			  text-right text-sm-center
-    			  align-self-sm-center
-    			  xs-push-top">
-    			<a href="https://www.milchmanufaktur.ch/" class="mm-link" target="_blank">
-    				<img class="responsive" src="upload/layout/milchmanufaktur-icon.svg" alt="">
-    			</a>
-    		</div>
-
-    	</div>
-    </div></footer>
-
-    <div class="global-menu">
-    	<div class="global-menu__wrap">
-
-    																<a class="global-menu__item " href="/meine-fonduemischung/"><span>Meine Fonduemischung</span></a>
-    																<a class="global-menu__item " href="/fondue-klassiker/"><span>Fondue-Klassiker</span></a>
-    																<a class="global-menu__item " href="/social/"><span>#Myfondue</span></a>
-    																<a class="global-menu__item " href="/informationen/"><span>Informationen</span></a>
-    																<a class="global-menu__item " href="/milchmanufaktur/"><span>Milchmanufaktur</span></a>
-    	</div></div>
   </body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // the body of this function is in assets/js/now-ui-kit.js
+        nowuiKit.initSliders();
+    });
+</script>
 </html>
