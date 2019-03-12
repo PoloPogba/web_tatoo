@@ -1,10 +1,10 @@
 Started GET "/" for 127.0.0.1 at 2019-03-12 16:50:37 +0100
 Started GET "/" for 127.0.0.1 at 2019-03-12 16:50:38 +0100
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "webtatoolol_development" does not exist
 ):
-  
-  
+
+
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
@@ -51,9 +51,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
 ActiveRecord::NoDatabaseError (FATAL:  database "webtatoolol_development" does not exist
 ):
-  
+
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
 activerecord (5.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
@@ -105,7 +106,7 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   [1m[35m (568.7ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
 Started GET "/" for 127.0.0.1 at 2019-03-12 16:51:15 +0100
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -113,7 +114,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -148,7 +149,7 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2019-03-12 16:51:31 +0100
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -156,7 +157,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -190,3 +191,80 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+=======
+  [1m[35m (268.8ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (300.2ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateWhos (20190312144951)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "whos" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190312144951_create_whos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312144951"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateActivities (20190312145322)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "activities" ("id" bigserial primary key, "title" character varying, "who_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190312145322_create_activities.rb:3
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_activities_on_who_id" ON "activities"  ("who_id")[0m
+  ↳ db/migrate/20190312145322_create_activities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312145322"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTypes (20190312145520)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "types" ("id" bigserial primary key, "title" character varying, "activity_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190312145520_create_types.rb:3
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_types_on_activity_id" ON "types"  ("activity_id")[0m
+  ↳ db/migrate/20190312145520_create_types.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312145520"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateFunctions (20190312145641)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "functions" ("id" bigserial primary key, "title" character varying, "price" decimal, "type_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190312145641_create_functions.rb:3
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_functions_on_type_id" ON "functions"  ("type_id")[0m
+  ↳ db/migrate/20190312145641_create_functions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312145641"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-12 15:54:04.118707"], ["updated_at", "2019-03-12 15:54:04.118707"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-03-12 16:54:09 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by WhosController#index as HTML
+  Rendering whos/index.html.erb within layouts/application
+  Rendered whos/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 307ms (Views: 288.8ms | ActiveRecord: 0.0ms)
+
+
+>>>>>>> master
