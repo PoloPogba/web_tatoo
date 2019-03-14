@@ -5,36 +5,33 @@
 
 
 
-<% if user_signed_in? %>
-    <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete" %>
-<% else %>
-    <%= link_to "Connexion", new_user_session_path %>
-    <%= link_to "Inscription", new_user_registration_path %>
-<% end %>
-
-</br>
-</br>
-                                                                                            
 
 
-<% @whos.each do |who| %>                     
-<%= who.title %></br>
-<%end%>
+    <div class="page-header header-filter" filter-color="greenblue">
+          <%= image_tag "cover.jpg", :class=>"page-header-image" %>
+        <div class="content-center">
+            <div class="container">
+                <div class="row">
 
----------------------------------------------------------------------------------</br>
+                    <div class="col-md-6 text-right">
+                        <h1 class="title">LE PROGRAMMEUR</h1>
+                        <h4 class="description">Trouves ton dev pour ton super website!</h4>
 
-<% @activities.each do |activity| %>                
-<%= activity.title %></br>
-<%end%>
 
------------------------------------------------------------------------------------</br>
+                    </div>
 
-<% @types.each do |type| %>                
-<%= type.title %></br>
-<%end%>
+                      <div class="col-md-6 ml-auto text-left">
+                          <h2>Je suis...</h2>
+                          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
+                          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
+                          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
 
-----------------------------------------------------------------------------------</br>
 
-<% @functions.each do |function| %>                
-<%= function.title %> : <%=function.price%> $ </br>
-<%end%>
+
+                      </div>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
