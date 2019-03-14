@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
     def index 
-    
+        
     end
 
  def new
@@ -11,16 +11,18 @@ class GuestsController < ApplicationController
     end
 
     def create 
-        @guest = Guest.new 
-       puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-       puts @guest
-       puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        
-        if @guest.save 
-            redirect_to guest_path(@guest.id)
-        else 
-            redirect_to root_path
 
-        end
+        @guest = Guest.new 
+        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        puts @guest
+        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+         
+         if @guest.save 
+             redirect_to guest_path(@guest.id)
+         else 
+             redirect_to root_path
+ 
+         end
+       
     end
 end
