@@ -1,0 +1,2 @@
+class Formfuction < ApplicationRecord
+end
