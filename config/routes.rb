@@ -2,11 +2,10 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :whos
-  resources :activities
-  resources :types
-  resources :functions
-  
-root 'whos#index'
+  resources :guests, only: [:new, :create, :show]
+
+
+root 'guests#index'
 
 get '/contact', to: 'staticpages#contact'
 get '/mentions-legales', to: 'staticpages#mentions'
