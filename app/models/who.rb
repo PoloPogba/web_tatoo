@@ -1,4 +1,5 @@
 class Who < ApplicationRecord
-    has_many :activies
-    has_many :devis
+    
+    has_many :forms
+    has_many :formusers
 end

@@ -1,5 +1,5 @@
 class Type < ApplicationRecord
-    belongs_to :activity
-    has_many :functions
-    has_many :devis
+    
+    has_many :forms
+    has_many :formusers
 end
