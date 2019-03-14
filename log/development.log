@@ -128,449 +128,6 @@ Processing by WhosController#index as HTML
 Completed 200 OK in 307ms (Views: 288.8ms | ActiveRecord: 0.0ms)
 
 
-<<<<<<< HEAD
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Migrating to DeviseCreateUsers (20190312162509)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "first_name" character varying, "last_name" character varying, "phone_number" integer, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:5
-  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:41
-  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:42
-  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312162509"]]
-  ↳ bin/rails:9
-  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Migrating to CreateDevis (20190312163335)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "devis" ("id" bigserial primary key, "who_id" bigint, "activity_id" bigint, "type_id" bigint, "function_id" bigint, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_who_id" ON "devis"  ("who_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_activity_id" ON "devis"  ("activity_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_type_id" ON "devis"  ("type_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_function_id" ON "devis"  ("function_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_user_id" ON "devis"  ("user_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312163335"]]
-  ↳ bin/rails:9
-  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:00:02 +0100
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  Rendered whos/index.html.erb within layouts/application (3.8ms)
-Completed 200 OK in 208ms (Views: 187.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2019-03-12 18:00:15 +0100
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.0ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (20.2ms)
-Completed 200 OK in 54ms (Views: 34.9ms | ActiveRecord: 4.6ms)
-
-
-Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-12 18:00:20 +0100
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W0NU0+lLIZlkErVfYod2isFE0R0LlnNxn/wE7arBw4oHwnSXS2U9zgT75dBuzDkPq9tAKJZvwwyGbEbA6bm+Gg==", "user"=>{"email"=>"polopogba@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "polopogba@gmail.com"], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Completed 401 Unauthorized in 4ms (ActiveRecord: 0.8ms)
-
-
-Processing by Devise::SessionsController#new as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W0NU0+lLIZlkErVfYod2isFE0R0LlnNxn/wE7arBw4oHwnSXS2U9zgT75dBuzDkPq9tAKJZvwwyGbEbA6bm+Gg==", "user"=>{"email"=>"polopogba@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (0.6ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
-Completed 200 OK in 136ms (Views: 11.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:04:22 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  Rendered whos/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_up" for 127.0.0.1 at 2019-03-12 18:04:23 +0100
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_error_messages.html.erb (0.5ms)
-  Rendered devise/shared/_links.html.erb (1.1ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
-Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
-
-
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-Started GET "/users/sign_up" for 127.0.0.1 at 2019-03-12 18:05:38 +0100
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_error_messages.html.erb (0.4ms)
-  Rendered devise/shared/_links.html.erb (1.7ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (19.3ms)
-Completed 200 OK in 215ms (Views: 193.3ms | ActiveRecord: 3.2ms)
-
-
-Started GET "/users/sign_up" for 127.0.0.1 at 2019-03-12 18:05:52 +0100
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_error_messages.html.erb (0.4ms)
-  Rendered devise/shared/_links.html.erb (0.8ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
-Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users" for 127.0.0.1 at 2019-03-12 18:06:09 +0100
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zij9jr87945TQkB3BsW9bSRRHvDX/vasH7fOHz498rcp59Um1a2lUqJx9axn+rXcEUwGQJymjNax64S+gpU81g==", "user"=>{"first_name"=>"Polo", "last_name"=>"Pogba", "phone_number"=>"9876", "email"=>"polopogba@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "polopogba@gmail.com"], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "first_name", "last_name", "phone_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "polopogba@gmail.com"], ["encrypted_password", "$2a$11$PC79NkpB2pzLbiO6lAfsue44bOvhrOqkdJgb7fLjvSu.QrOh2XCIi"], ["first_name", "Polo"], ["last_name", "Pogba"], ["phone_number", 9876], ["created_at", "2019-03-12 17:06:09.855303"], ["updated_at", "2019-03-12 17:06:09.855303"]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 131ms (ActiveRecord: 1.4ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:06:09 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/whos/index.html.erb:20
-  Rendered whos/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 24ms (Views: 14.9ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:06:14 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/whos/index.html.erb:20
-  Rendered whos/index.html.erb within layouts/application (1.9ms)
-Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
-
-
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-12 18:07:10 +0100
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"Ga/6XMrGYCvWadHPbGpbXxXzlCbZA5YwGBWqOZ7pDL3+YNL0oFAy9ydaZBQNVVPuIO6MlpJb7Eq2SeCYIkHC3A=="}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 34ms (ActiveRecord: 4.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:07:10 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  Rendered whos/index.html.erb within layouts/application (3.7ms)
-Completed 200 OK in 188ms (Views: 176.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_in" for 127.0.0.1 at 2019-03-12 18:07:12 +0100
-Processing by Devise::SessionsController#new as HTML
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (1.2ms)
-  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
-Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
-
-
-Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-12 18:07:16 +0100
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZCOLj8z6mdUut/+38FPcXnjFoi6m0wzA5TNbxf/njs1uv/iDlMMB33rbhDLPMiGeM1XcAaRisMgQ5OxybD6gg==", "user"=>{"email"=>"polopogba@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
-  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "polopogba@gmail.com"], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 131ms (ActiveRecord: 0.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:07:17 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/whos/index.html.erb:20
-  Rendered whos/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms)
-
-
-Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-12 18:07:22 +0100
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"ohZLyvKnvAMPZEPHMP4NjrEAnoGxXkTVCJrqtyG/txqO2vO8So9R2z5bWcjtz79itBWQdDCFZew/oj1PQiSjpQ=="}
-  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:07:22 +0100
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  Rendered whos/index.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
-
-
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-Migrating to DeviseCreateUsers (20190312162509)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.4ms)[0m  [1m[35mDROP INDEX  "index_users_on_reset_password_token"[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_users_on_email"[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "users"[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190312162509"]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-Migrating to CreateDevis (20190312163335)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "devis"[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190312163335"]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/bin/rake:23
-  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Migrating to DeviseCreateUsers (20190312162509)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "first_name" character varying, "last_name" character varying, "phone_number" integer, "campany_name" character varying, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:5
-  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:42
-  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
-  ↳ db/migrate/20190312162509_devise_create_users.rb:43
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312162509"]]
-  ↳ bin/rails:9
-  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-Migrating to CreateDevis (20190312163335)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "devis" ("id" bigserial primary key, "who_id" bigint, "activity_id" bigint, "type_id" bigint, "function_id" bigint, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_who_id" ON "devis"  ("who_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_activity_id" ON "devis"  ("activity_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_type_id" ON "devis"  ("type_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_function_id" ON "devis"  ("function_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_devis_on_user_id" ON "devis"  ("user_id")[0m
-  ↳ db/migrate/20190312163335_create_devis.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190312163335"]]
-  ↳ bin/rails:9
-  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[36mDevi Load (1.7ms)[0m  [1m[34mSELECT "devis".* FROM "devis"[0m
-Started GET "/" for 127.0.0.1 at 2019-03-12 18:23:41 +0100
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Processing by WhosController#index as HTML
-  Rendering whos/index.html.erb within layouts/application
-  Rendered whos/index.html.erb within layouts/application (4.3ms)
-Completed 200 OK in 203ms (Views: 185.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/users/sign_up" for 127.0.0.1 at 2019-03-12 18:23:44 +0100
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_error_messages.html.erb (0.7ms)
-  Rendered devise/shared/_links.html.erb (0.9ms)
-  Rendered devise/registrations/new.html.erb within layouts/application (10.4ms)
-Completed 200 OK in 39ms (Views: 23.3ms | ActiveRecord: 4.5ms)
-
-
-Started POST "/users" for 127.0.0.1 at 2019-03-12 18:24:10 +0100
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UPTvMcUskJIvmVtFIJ976Kk6XdytjvZWTiCdVxqPZ/t+Y2h7HYG0J/fBLhBTSl5p9PMiDwzSsoROfEIEd6EReQ==", "user"=>{"first_name"=>"", "last_name"=>"pogba", "campany_name"=>"", "email"=>"polopogba@gmail.com", "phone_number"=>"8765", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-Unpermitted parameter: :campany_name
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "polopogba@gmail.com"], ["LIMIT", 1]]
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
-  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.8ms)
-
-
-
-NoMethodError (undefined method `numero_telephone' for #<User:0x00007f8f7d4a09c0>):
-
-activemodel (5.2.2) lib/active_model/attribute_methods.rb:430:in `method_missing'
-activemodel (5.2.2) lib/active_model/validator.rb:150:in `block in validate'
-activemodel (5.2.2) lib/active_model/validator.rb:149:in `each'
-activemodel (5.2.2) lib/active_model/validator.rb:149:in `validate'
-activesupport (5.2.2) lib/active_support/callbacks.rb:426:in `block in make_lambda'
-activesupport (5.2.2) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
-activesupport (5.2.2) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
-activesupport (5.2.2) lib/active_support/callbacks.rb:605:in `catch'
-activesupport (5.2.2) lib/active_support/callbacks.rb:605:in `block in default_terminator'
-activesupport (5.2.2) lib/active_support/callbacks.rb:199:in `block in halting'
-activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
-activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `each'
-activesupport (5.2.2) lib/active_support/callbacks.rb:513:in `invoke_before'
-activesupport (5.2.2) lib/active_support/callbacks.rb:131:in `run_callbacks'
-activesupport (5.2.2) lib/active_support/callbacks.rb:816:in `_run_validate_callbacks'
-activemodel (5.2.2) lib/active_model/validations.rb:409:in `run_validations!'
-activemodel (5.2.2) lib/active_model/validations/callbacks.rb:118:in `block in run_validations!'
-activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
-activesupport (5.2.2) lib/active_support/callbacks.rb:816:in `_run_validation_callbacks'
-activemodel (5.2.2) lib/active_model/validations/callbacks.rb:118:in `run_validations!'
-activemodel (5.2.2) lib/active_model/validations.rb:339:in `valid?'
-activerecord (5.2.2) lib/active_record/validations.rb:67:in `valid?'
-activerecord (5.2.2) lib/active_record/validations.rb:84:in `perform_validations'
-activerecord (5.2.2) lib/active_record/validations.rb:46:in `save'
-activerecord (5.2.2) lib/active_record/transactions.rb:310:in `block (2 levels) in save'
-activerecord (5.2.2) lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
-activerecord (5.2.2) lib/active_record/connection_adapters/abstract/database_statements.rb:259:in `block in transaction'
-activerecord (5.2.2) lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
-/home/polopogba/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
-activerecord (5.2.2) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
-activerecord (5.2.2) lib/active_record/connection_adapters/abstract/database_statements.rb:259:in `transaction'
-activerecord (5.2.2) lib/active_record/transactions.rb:212:in `transaction'
-activerecord (5.2.2) lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
-activerecord (5.2.2) lib/active_record/transactions.rb:310:in `block in save'
-activerecord (5.2.2) lib/active_record/transactions.rb:325:in `rollback_active_record_state!'
-activerecord (5.2.2) lib/active_record/transactions.rb:309:in `save'
-activerecord (5.2.2) lib/active_record/suppressor.rb:44:in `save'
-devise (4.6.1) app/controllers/devise/registrations_controller.rb:19:in `create'
-actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
-actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
-actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
-activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
-actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
-activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
-activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
-activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
-actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
-activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
-actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
-actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
-actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
-actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
-actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
-actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
-actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
-actionpack (5.2.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
-actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
-actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
-actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
-actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
-warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
-warden (1.2.8) lib/warden/manager.rb:34:in `catch'
-warden (1.2.8) lib/warden/manager.rb:34:in `call'
-rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
-rack (2.0.6) lib/rack/etag.rb:25:in `call'
-rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
-rack (2.0.6) lib/rack/head.rb:12:in `call'
-actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
-rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
-activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
-actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
-actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
-=======
   [1m[35m (136.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
   ↳ bin/rails:9
   [1m[35m (41.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
@@ -647,7 +204,6 @@ Started GET "/upload/layout/logo-myfondue.svg" for 127.0.0.1 at 2019-03-12 17:21
 ActionController::RoutingError (No route matches [GET] "/upload/layout/logo-myfondue.svg"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
->>>>>>> master
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -50404,4 +49960,210 @@ Migrating to CreateGuests (20190314144451)
   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:169
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/whos" for 127.0.0.1 at 2019-03-14 19:30:38 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by WhosController#index as HTML
+  Rendering whos/index.html.erb within layouts/application
+  Rendered whos/index.html.erb within layouts/application (144.9ms)
+Completed 200 OK in 185ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 19:30:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 19:30:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 19:30:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-14 19:32:46 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GuestsController#index as HTML
+  Rendering guests/index.html.erb within layouts/application
+  Rendered guests/index.html.erb within layouts/application (146.8ms)
+Completed 200 OK in 170ms (Views: 161.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 19:32:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 19:32:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 19:32:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
