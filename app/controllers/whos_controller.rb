@@ -1,10 +1,10 @@
 class WhosController < ApplicationController
 
     def index 
-@who = Who.all
-@activity = Activity.all
-@type = Type.all
-@function = Function.all
+@whos = Who.all
+@activities = Activity.all
+@types = Type.all
+@functions = Function.all
 
     end
     
