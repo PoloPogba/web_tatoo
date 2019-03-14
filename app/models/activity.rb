@@ -1,5 +1,5 @@
 class Activity < ApplicationRecord
-    belongs_to :who
-    has_many :types
-    has_many :devis
+   
+    has_many :forms
+    has_many :formusers
 end

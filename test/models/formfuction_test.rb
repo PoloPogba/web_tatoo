@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DeviTest < ActiveSupport::TestCase
+class FormfuctionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
