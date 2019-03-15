@@ -12,18 +12,16 @@ class GuestsController < ApplicationController
     end
    
     def create 
-        @number= 1
+        
         @last_guest_id = Guest.last.id
+        
         @guest = Guest.new 
-        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        puts @guest
-        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+       
 
         @form = Form.new
         @form.guest_id = @last_guest_id +1
         @form.who_id = @number.to_i
-        puts @number
-        puts @form.who_id
+      
          if @guest.save && @form.save
              redirect_to guest_path(@guest.id)
          else 
