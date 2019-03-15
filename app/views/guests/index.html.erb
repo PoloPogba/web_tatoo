@@ -11,7 +11,7 @@
         <div class="col-md-6 ml-auto text-left">
           <h2>Je suis...</h2>
           <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-          <%=link_to "Un particulier", guest_path(1), class:"btn btn-warning btn-round btn-lg" %>
+          <%=link_to "Un particulier", guests_path(@guest), class:"btn btn-warning btn-round btn-lg" %>
           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
           <a class=" btn btn-warning btn-round btn-lg">Une association</a>
 
@@ -19,7 +19,8 @@
 
           <%= submit_tag 'Call ', class:"btn btn-warning btn-round btn-lg" %>
 
-
+<%=@number %>
+          <% end %>
 
 
 
@@ -30,18 +31,17 @@
 
                          <% end %>
 
-                      
-
-
-
-          <% end %>
 
 
 
 
 
 
-         <%=@number %>
+
+
+
+
+
 
         </div>
       </div>
