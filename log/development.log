@@ -26958,20 +26958,6 @@ Completed 302 Found in 142ms (ActiveRecord: 5.9ms)
 Started GET "/" for 127.0.0.1 at 2019-03-12 20:11:45 +0100
 Processing by WhosController#index as HTML
   Rendering whos/index.html.erb within layouts/application
-<<<<<<< HEAD
-  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/whos/index.html.erb:8
-  [1m[36mWho Load (0.2ms)[0m  [1m[34mSELECT "whos".* FROM "whos"[0m
-  ↳ app/views/whos/index.html.erb:20
-  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
-  ↳ app/views/whos/index.html.erb:26
-  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
-  ↳ app/views/whos/index.html.erb:32
-  [1m[36mFunction Load (0.3ms)[0m  [1m[34mSELECT "functions".* FROM "functions"[0m
-  ↳ app/views/whos/index.html.erb:38
-  Rendered whos/index.html.erb within layouts/application (9.2ms)
-Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 4.6ms)
-=======
   Rendered whos/index.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 31ms (Views: 24.5ms | ActiveRecord: 0.0ms)
 
@@ -30960,11 +30946,10 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   ↳ bin/rails:9
   [1m[35m (265.8ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
->>>>>>> master
 Started GET "/" for 127.0.0.1 at 2019-03-14 18:31:41 +0100
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/ABT/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -30972,7 +30957,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -31598,9 +31583,9 @@ Completed 200 OK in 443ms (Views: 404.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:32:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31629,9 +31614,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:32:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31660,9 +31645,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:32:21 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31698,9 +31683,9 @@ Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:34:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31729,9 +31714,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:34:29 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31760,9 +31745,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:34:30 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31798,9 +31783,9 @@ Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:37:40 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31829,9 +31814,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:37:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31860,9 +31845,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:37:42 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31898,9 +31883,9 @@ Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:38:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31929,9 +31914,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:38:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31960,9 +31945,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:38:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -31998,9 +31983,9 @@ Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:39:27 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -32029,9 +32014,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:39:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -32060,9 +32045,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:39:29 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -32090,9 +32075,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/blurred-image-1.jpg"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -32128,7 +32113,7 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2019-03-14 19:17:19 +0100
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -32137,7 +32122,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -35433,7 +35418,7 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 16:43:00 +
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 16:22:12 +0100
 >>>>>>> master
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -35473,7 +35458,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 19:17:38 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 16:22:12 +0100
 >>>>>>> master
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -35505,19 +35490,12 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:43:01 +0100
-
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-
-=======
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 19:17:38 +0100
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:22:12 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -35545,50 +35523,12 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
-Started GET "/guests/new" for 127.0.0.1 at 2019-03-14 16:43:02 +0100
-Processing by GuestsController#new as HTML
-Completed 406 Not Acceptable in 28ms (ActiveRecord: 0.0ms)
-
-
-
-ActionController::UnknownFormat (GuestsController#new is missing a template for this request format and variant.
-
-request.formats: ["text/html"]
-request.variant: []
-
-NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
-
-actionpack (5.2.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
-actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
-actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
-actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
-actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
-actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
-activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
-actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
-activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
-activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
-activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
-actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
-actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
-activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
-actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
-actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
-actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
-actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
-actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
-actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
-=======
 Started GET "/" for 127.0.0.1 at 2019-03-14 16:31:00 +0100
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  
+
 ActionController::RoutingError (uninitialized constant GuestsController):
-  
+
 bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `block in load_missing_constant'
 bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
 bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:76:in `rescue in load_missing_constant'
@@ -35602,7 +35542,6 @@ actionpack (5.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_f
 actionpack (5.2.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
 actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
 actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
 actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
 actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
@@ -40136,9 +40075,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 16:56:40 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40167,9 +40106,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:56:40 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40205,9 +40144,9 @@ Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 16:56:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40236,9 +40175,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 16:56:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40268,13 +40207,13 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/guests/assets/img/apple-icon.png" for 127.0.0.1 at 2019-03-14 16:56:42 +0100
 Started GET "/guests/assets/img/favicon.png" for 127.0.0.1 at 2019-03-14 16:56:42 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests/assets/img/apple-icon.png"):
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests/assets/img/favicon.png"):
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:56:42 +0100
-  
-  
+
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40329,9 +40268,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40370,9 +40309,9 @@ Completed 200 OK in 167ms (Views: 159.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 16:58:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40401,9 +40340,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 16:58:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40432,9 +40371,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:58:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40470,9 +40409,9 @@ Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 16:58:25 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40501,9 +40440,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 16:58:25 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40532,9 +40471,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 16:58:26 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40582,9 +40521,9 @@ Completed 200 OK in 171ms (Views: 163.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:36:04 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40613,9 +40552,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:36:04 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40644,9 +40583,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:36:04 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40682,9 +40621,9 @@ Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:36:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40713,9 +40652,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:36:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40745,9 +40684,9 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/guests/assets/img/favicon.png" for 127.0.0.1 at 2019-03-14 17:36:05 +0100
 Started GET "/guests/assets/img/apple-icon.png" for 127.0.0.1 at 2019-03-14 17:36:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests/assets/img/favicon.png"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40775,9 +40714,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests/assets/img/apple-icon.png"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40806,9 +40745,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:36:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -40878,16 +40817,16 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `id' for nil:NilClass):
-    13: 
+    13:
     14:                       <div class="col-md-6 ml-auto text-left">
     15:                           <h2>Je suis...</h2>
     16:                           <%=link_to "Un particulier", guest_path(@guest.id), :action => :create, class:"btn btn-warning btn-round btn-lg" %>
     17:                           <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
     18:                           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
     19:                           <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-  
+
 app/views/guests/index.html.erb:16:in `_app_views_guests_index_html_erb__4064336101801900894_70050250497320'
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:38:17 +0100
 Processing by GuestsController#show as HTML
@@ -40901,9 +40840,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:38:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -40932,17 +40871,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started POST "/?method=create" for 127.0.0.1 at 2019-03-14 17:46:57 +0100
 
 ActionController::RoutingError (No route matches [POST] "/"):
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:38:18 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -40970,7 +40902,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:47:14 +0100
 Processing by GuestsController#index as HTML
   Rendering guests/index.html.erb within layouts/application
@@ -40995,12 +40926,6 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:48:55 +
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:38:18 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41028,7 +40953,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:48:55 +0100
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
@@ -41064,19 +40988,6 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:48:55 +01
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
-=======
-Started GET "/guests/new" for 127.0.0.1 at 2019-03-14 17:38:19 +0100
-Processing by GuestsController#new as HTML
-  Rendering guests/new.html.erb within layouts/application
-  Rendered guests/new.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:38:19 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41104,7 +41015,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/guests?class=btn+btn-warning+btn-round+btn-lg" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
 Processing by GuestsController#show as HTML
   Parameters: {"class"=>"btn btn-warning btn-round btn-lg"}
@@ -41117,12 +41027,6 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:48:58 +
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:38:19 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41150,17 +41054,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
-=======
-Started GET "/guests/assets/img/favicon.png" for 127.0.0.1 at 2019-03-14 17:38:20 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/guests/assets/img/favicon.png"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41188,13 +41085,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:38:20 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41224,7 +41116,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/guests/new" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
 Processing by GuestsController#new as HTML
   Rendering guests/new.html.erb within layouts/application
@@ -41234,17 +41125,6 @@ Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
 
-=======
-Started GET "/" for 127.0.0.1 at 2019-03-14 17:41:08 +0100
-Processing by GuestsController#index as HTML
-  Rendering guests/index.html.erb within layouts/application
-  Rendered guests/index.html.erb within layouts/application (1.7ms)
-Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:08 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41274,13 +41154,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:08 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41310,13 +41185,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:09 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41346,7 +41216,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:52:10 +0100
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
@@ -41377,17 +41246,6 @@ Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:52:23 +0100
 
-=======
-Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:41:22 +0100
-Processing by GuestsController#show as HTML
-  Rendering guests/show.html.erb within layouts/application
-  Rendered guests/show.html.erb within layouts/application (1.5ms)
-Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:22 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41417,13 +41275,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:52:23 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:22 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41453,13 +41306,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:52:24 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:22 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41489,7 +41337,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/guests/new" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
 Processing by GuestsController#new as HTML
   Rendering guests/new.html.erb within layouts/application
@@ -41499,17 +41346,6 @@ Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 7.2ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
 
-=======
-Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:41:38 +0100
-Processing by GuestsController#show as HTML
-  Rendering guests/show.html.erb within layouts/application
-  Rendered guests/show.html.erb within layouts/application (3.9ms)
-Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:38 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41539,13 +41375,8 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:38 +0100
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -41575,17 +41406,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:38 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41613,7 +41437,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
   [1m[36mGuest Load (1.1ms)[0m  [1m[34mSELECT "guests".* FROM "guests"[0m
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -41628,19 +41451,6 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:53:25 +
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
-=======
-Started GET "/guests/new" for 127.0.0.1 at 2019-03-14 17:41:40 +0100
-Processing by GuestsController#new as HTML
-  Rendering guests/new.html.erb within layouts/application
-  Rendered guests/new.html.erb within layouts/application (0.4ms)
-Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:40 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41668,17 +41478,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:40 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41706,17 +41509,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
-=======
-Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:40 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41744,24 +41540,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started POST "/?method=create" for 127.0.0.1 at 2019-03-14 17:53:28 +0100
 
 ActionController::RoutingError (No route matches [POST] "/"):
 
-=======
-Started GET "/" for 127.0.0.1 at 2019-03-14 17:41:55 +0100
-Processing by GuestsController#index as HTML
-  Rendering guests/index.html.erb within layouts/application
-  Rendered guests/index.html.erb within layouts/application (2.2ms)
-Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:55 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41789,7 +41571,6 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:55:29 +0100
 Processing by GuestsController#index as HTML
   Rendering guests/index.html.erb within layouts/application
@@ -41801,12 +41582,6 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:55:29 +
 
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
-=======
-Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:55 +0100
-  
-ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
->>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -41841,9 +41616,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -41887,9 +41662,9 @@ Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:41:57 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -41932,9 +41707,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:41:57 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -41970,9 +41745,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:41:57 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42020,9 +41795,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:42:16 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42065,9 +41840,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:42:16 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42103,9 +41878,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:42:16 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42150,9 +41925,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:42:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42195,9 +41970,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:42:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42233,9 +42008,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:42:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42279,9 +42054,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:43:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42324,9 +42099,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:43:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42362,9 +42137,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:43:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42397,9 +42172,9 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:56:17 +0100
 =======
 Started POST "/?method=create" for 127.0.0.1 at 2019-03-14 17:43:30 +0100
-  
+
 ActionController::RoutingError (No route matches [POST] "/"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -42437,14 +42212,14 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/home/polopogba/Dossier/web_tatoo/app/views/guests/index.html.erb:22: syntax error, unexpected ')', expecting =>
 ... method: "create", guests_path) do @output_buffer.safe_appen...
 ...                              ^
 /home/polopogba/Dossier/web_tatoo/app/views/guests/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
           ensure
           ^~~~~~):
-  
+
 app/views/guests/index.html.erb:22: syntax error, unexpected ')', expecting =>
 app/views/guests/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:46:07 +0100
@@ -42458,11 +42233,11 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 <<<<<<< HEAD
 =======
-  
+
 SyntaxError (/home/polopogba/Dossier/web_tatoo/app/views/guests/index.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
 ..., method: "create") guests_path do @output_buffer.safe_appen...
 ...                    ^~~~~~~~~~~):
-  
+
 app/views/guests/index.html.erb:22: syntax error, unexpected tIDENTIFIER, expecting keyword_end
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:46:19 +0100
 Processing by GuestsController#index as HTML
@@ -42472,9 +42247,9 @@ Completed 200 OK in 178ms (Views: 176.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:46:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42520,9 +42295,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:46:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42558,9 +42333,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:46:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42604,9 +42379,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:46:56 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42649,9 +42424,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:46:56 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42687,9 +42462,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:46:56 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42725,9 +42500,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started POST "/?method=create" for 127.0.0.1 at 2019-03-14 17:46:57 +0100
-  
+
 ActionController::RoutingError (No route matches [POST] "/"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42779,11 +42554,11 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/home/polopogba/Dossier/web_tatoo/app/views/guests/index.html.erb:26: syntax error, unexpected =>, expecting '}'
 ...er.append=( link_to {:action => :create}, :method => :post )...
 ...                             ^~):
-  
+
 app/views/guests/index.html.erb:26: syntax error, unexpected =>, expecting '}'
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:48:55 +0100
 Processing by GuestsController#index as HTML
@@ -42793,9 +42568,9 @@ Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:48:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42831,9 +42606,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:48:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42869,9 +42644,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:48:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42922,9 +42697,9 @@ Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42960,9 +42735,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -42998,9 +42773,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:48:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43050,9 +42825,9 @@ Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43088,9 +42863,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43126,9 +42901,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:49:02 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43179,17 +42954,17 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `new_guest_path' for #<#<Class:0x000055710f05cac8>:0x000055710f050890>
 Did you mean?  new_guests_path):
-    13: 
+    13:
     14:                       <div class="col-md-6 ml-auto text-left">
     15:                           <h2>Je suis...</h2>
     16:                           <%=link_to "Un particulier",new_guest_path,:action => :create, class:"btn btn-warning btn-round btn-lg" %>
     17:                           <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
     18:                           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
     19:                           <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-  
+
 app/views/guests/index.html.erb:16:in `_app_views_guests_index_html_erb__3819475142668123288_46972035900580'
 Started GET "/" for 127.0.0.1 at 2019-03-14 17:52:23 +0100
 Processing by GuestsController#index as HTML
@@ -43199,9 +42974,9 @@ Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:52:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43237,9 +43012,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:52:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43275,9 +43050,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:52:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43326,7 +43101,7 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:58:42 +
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -43362,7 +43137,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:58:42 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -43398,7 +43173,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:58:42 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:52:27 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -43453,7 +43228,7 @@ Completed 200 OK in 180ms (Views: 172.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -43489,7 +43264,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:14 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -43527,9 +43302,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:53:25 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -43558,9 +43333,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started POST "/?method=create" for 127.0.0.1 at 2019-03-14 17:53:28 +0100
-  
+
 ActionController::RoutingError (No route matches [POST] "/"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -43608,7 +43383,7 @@ Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:55:29 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -43644,7 +43419,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:15 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:55:29 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -43680,7 +43455,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:15 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:55:30 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -43730,7 +43505,7 @@ Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:55:33 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -43766,7 +43541,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:16 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:55:33 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -43802,7 +43577,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:16 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:55:33 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -43852,7 +43627,7 @@ Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:55:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -43888,7 +43663,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:17 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:55:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -43927,7 +43702,7 @@ Processing by GuestsController#show as HTML
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:55:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -43976,9 +43751,9 @@ Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:56:15 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -44007,9 +43782,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:56:15 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -44038,9 +43813,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:56:15 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44085,9 +43860,9 @@ Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:56:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44128,9 +43903,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:56:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44166,9 +43941,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:56:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44217,9 +43992,9 @@ Completed 200 OK in 174ms (Views: 165.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:56:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44262,9 +44037,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:56:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44304,9 +44079,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:56:41 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44352,9 +44127,9 @@ Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:56:42 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44394,9 +44169,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:56:42 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44432,9 +44207,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:56:42 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44481,9 +44256,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:57:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44519,9 +44294,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:57:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44567,9 +44342,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:57:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44613,9 +44388,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:57:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44651,9 +44426,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:57:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44696,9 +44471,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:57:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44742,9 +44517,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:57:33 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44780,9 +44555,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:57:34 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44830,9 +44605,9 @@ ActionController::RoutingError (No route matches [GET] "/assets/img/favicon.png"
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:57:34 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44910,7 +44685,7 @@ Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:58:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -44946,7 +44721,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:01 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:58:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -44982,7 +44757,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:01 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:58:40 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -45032,7 +44807,7 @@ Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:58:42 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -45068,7 +44843,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:43 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:58:42 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -45104,7 +44879,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:43 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:58:42 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -45156,7 +44931,7 @@ Completed 200 OK in 188ms (Views: 180.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:14 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -45192,7 +44967,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:45 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:14 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -45228,7 +45003,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:46 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:14 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -45278,7 +45053,7 @@ Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:15 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -45314,7 +45089,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:36 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:15 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -45350,7 +45125,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:36 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:15 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -45400,7 +45175,7 @@ Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:16 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -45437,7 +45212,7 @@ Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:16 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -45481,9 +45256,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:16 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45526,9 +45301,9 @@ Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45564,9 +45339,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45612,9 +45387,9 @@ Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Processing by GuestsController#show as HTML
   Rendering guests/show.html.erb within layouts/application
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
   Rendered guests/show.html.erb within layouts/application (2.6ms)
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -45652,7 +45427,7 @@ Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -45694,9 +45469,9 @@ Processing by GuestsController#index as HTML
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 Processing by GuestsController#show as HTML
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -45742,9 +45517,9 @@ Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45778,7 +45553,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:38 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -45851,10 +45626,10 @@ Processing by GuestsController#index as HTML
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Processing by GuestsController#show as HTML
-  
+
   Rendering guests/show.html.erb within layouts/application
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45902,9 +45677,9 @@ Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:17 +0100
 Processing by GuestsController#show as HTML
   Rendering guests/show.html.erb within layouts/application
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45945,9 +45720,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -45985,9 +45760,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
 Processing by GuestsController#show as HTML
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
   Rendering guests/show.html.erb within layouts/application
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -46035,9 +45810,9 @@ Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46073,9 +45848,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46111,9 +45886,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46156,9 +45931,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 17:59:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46204,9 +45979,9 @@ ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.p
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:00:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46245,7 +46020,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:13:55 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:00:19 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -46281,7 +46056,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:13:55 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:00:19 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -46331,7 +46106,7 @@ Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:00:20 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -46367,7 +46142,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:14:21 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:00:20 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -46405,9 +46180,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:00:21 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46460,12 +46235,12 @@ Processing by GuestsController#index as HTML
 Completed 200 OK in 174ms (Views: 163.6ms | ActiveRecord: 0.0ms)
 
 
-  
-  
+
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.png"):
 ActionController::RoutingError (No route matches [GET] "/assets/img/favicon.png"):
-  
-  
+
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46617,9 +46392,9 @@ ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.p
 
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:07:01 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46660,9 +46435,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:01 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46698,9 +46473,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:01 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46750,9 +46525,9 @@ Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:07:43 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46788,9 +46563,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:43 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46826,9 +46601,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:43 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46876,7 +46651,7 @@ Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:07:45 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -46914,9 +46689,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:07:45 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -46952,9 +46727,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:07:46 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47004,9 +46779,9 @@ Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:36 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47042,9 +46817,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:36 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47080,9 +46855,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:36 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47132,9 +46907,9 @@ Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47171,9 +46946,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47215,9 +46990,9 @@ Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47256,9 +47031,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47301,9 +47076,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:37 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47346,9 +47121,9 @@ Processing by GuestsController#index as HTML
 Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47415,9 +47190,9 @@ ActionController::RoutingError (No route matches [POST] "/create"):
 
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47461,10 +47236,10 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 Processing by GuestsController#index as HTML
-  
+
   Rendering guests/index.html.erb within layouts/application
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
@@ -47505,9 +47280,9 @@ Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47543,9 +47318,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47587,9 +47362,9 @@ ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.p
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47631,10 +47406,10 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 Processing by GuestsController#index as HTML
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47676,9 +47451,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47714,9 +47489,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:08:38 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47752,9 +47527,9 @@ ActionController::RoutingError (No route matches [POST] "/guests_path"):
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:08:39 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -47802,7 +47577,7 @@ Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:13:44 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -47838,7 +47613,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:19 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:13:44 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -47874,7 +47649,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:19 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:13:44 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -47925,7 +47700,7 @@ Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:13:55 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -47962,9 +47737,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:20 +0
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
 =======
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.png"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48005,9 +47780,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:13:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48054,9 +47829,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:13:55 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48130,9 +47905,9 @@ Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:14:21 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48176,9 +47951,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:14:21 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48214,9 +47989,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:14:21 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48298,7 +48073,7 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:54 +
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:14:22 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -48336,9 +48111,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:14:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48374,9 +48149,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:14:23 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48423,9 +48198,9 @@ Completed 200 OK in 184ms (Views: 175.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:18:53 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48467,9 +48242,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:05 +
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
 =======
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.png"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48508,7 +48283,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:05 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:18:53 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -48545,9 +48320,9 @@ ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.p
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:18:54 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48596,9 +48371,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:18:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48642,9 +48417,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:18:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48680,9 +48455,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:18:58 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48726,9 +48501,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:19:03 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48772,9 +48547,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:19:03 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48810,9 +48585,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:19:03 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48855,9 +48630,9 @@ Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:19:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48893,9 +48668,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:19:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48938,9 +48713,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:19:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -48983,9 +48758,9 @@ Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:19:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49021,9 +48796,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:19:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49067,9 +48842,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:19:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49108,9 +48883,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:26:18 +0100
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /home/polopogba/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49154,9 +48929,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:26:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49200,9 +48975,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:26:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49238,9 +49013,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:26:22 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49276,9 +49051,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started POST "/create" for 127.0.0.1 at 2019-03-14 18:26:28 +0100
-  
+
 ActionController::RoutingError (No route matches [POST] "/create"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49326,7 +49101,7 @@ Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:27:19 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -49362,7 +49137,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:30:11 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:27:19 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -49398,7 +49173,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:30:11 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:27:19 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -49450,9 +49225,9 @@ Processing by GuestsController#index as HTML
 Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.png"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49493,9 +49268,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:27:29 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49531,9 +49306,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:27:29 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49595,9 +49370,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:27:29 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49633,9 +49408,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started POST "/guests_path" for 127.0.0.1 at 2019-03-14 18:27:32 +0100
-  
+
 ActionController::RoutingError (No route matches [POST] "/guests_path"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49678,9 +49453,9 @@ Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:18 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49724,9 +49499,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49762,9 +49537,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:19 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49808,9 +49583,9 @@ Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49868,9 +49643,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49906,9 +49681,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:20 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49955,9 +49730,9 @@ Completed 200 OK in 172ms (Views: 161.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:44 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -49993,9 +49768,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:44 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50038,9 +49813,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:44 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50085,9 +49860,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:51 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50123,9 +49898,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:51 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50161,9 +49936,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:51 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50208,9 +49983,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:28:54 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50253,9 +50028,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:28:54 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50292,9 +50067,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 >>>>>>> master
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:28:54 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50330,9 +50105,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.tt
 
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:28:57 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50375,9 +50150,9 @@ Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50421,9 +50196,9 @@ ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.wo
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:05 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50458,9 +50233,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:37:55 +0
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
 =======
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/apple-icon.png"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50499,7 +50274,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:37:55 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:29:06 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -50554,7 +50329,7 @@ Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:08 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 
@@ -50590,7 +50365,7 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:38:49 +0
 
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:08 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 
@@ -50626,7 +50401,7 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:38:49 +01
 
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:29:08 +0100
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 
@@ -50673,9 +50448,9 @@ ActionController::RoutingError (No route matches [GET] "/guests"):
 <<<<<<< HEAD
 =======
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:46 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -50711,7 +50486,7 @@ Started GET "/" for 127.0.0.1 at 2019-03-14 18:47:51 +0100
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:46 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -50719,7 +50494,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -50760,7 +50535,7 @@ Started GET "/" for 127.0.0.1 at 2019-03-14 18:47:55 +0100
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:29:46 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -50768,7 +50543,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.2.2) lib/active_record/migration.rb:579:in `check_pending!'
 activerecord (5.2.2) lib/active_record/migration.rb:556:in `call'
 actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
@@ -51344,9 +51119,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:48:26 +
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:29:50 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51386,9 +51161,9 @@ Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51421,9 +51196,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:48:28 +01
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51463,9 +51238,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:48:48 +
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:29:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51506,9 +51281,9 @@ Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:29:56 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51540,9 +51315,9 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:48:50 +0100
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:29:56 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51572,9 +51347,9 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:29:57 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51622,9 +51397,9 @@ Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:30:07 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51657,9 +51432,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:49:52 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:30:07 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51692,9 +51467,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:49:53 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:30:07 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51741,9 +51516,9 @@ Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:30:11 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51776,9 +51551,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:50:33 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:30:11 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51811,9 +51586,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:50:34 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:30:11 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51861,9 +51636,9 @@ Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:30:12 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51896,9 +51671,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:51:59 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:30:12 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51931,9 +51706,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:52:00 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:30:12 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -51962,7 +51737,7 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/now-ui-kit.css.map"):
 =======
 Started GET "/guests/1%20method=?commit=Save" for 127.0.0.1 at 2019-03-14 18:35:19 +0100
@@ -51973,14 +51748,14 @@ Processing by GuestsController#show as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/home/polopogba/Dossier/web_tatoo/app/views/guests/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
           ensure
           ^~~~~~
 /home/polopogba/Dossier/web_tatoo/app/views/guests/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
           end
           ^~~):
-  
+
 app/views/guests/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
 app/views/guests/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
 Started GET "/guests/1%20method=?commit=Save" for 127.0.0.1 at 2019-03-14 18:35:32 +0100
@@ -51992,10 +51767,10 @@ Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:35:32 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52040,9 +51815,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:12:16 +
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:35:32 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52071,13 +51846,13 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/now-ui-kit.css.map"):
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:35:32 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52114,9 +51889,9 @@ Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:36:02 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52145,10 +51920,10 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:36:02 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52186,9 +51961,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:12:17 +0
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:36:02 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52228,11 +52003,11 @@ Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
 
 
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 SyntaxError (/home/polopogba/Dossier/web_tatoo/app/views/guests/show.html.erb:16: syntax error, unexpected =>
 ...ulier", guests_path, action: => :create, class:"btn btn-warn...
 ...                             ^~):
-  
+
 app/views/guests/show.html.erb:16: syntax error, unexpected =>
 Started GET "/guests/1%20method=?commit=Save" for 127.0.0.1 at 2019-03-14 18:36:47 +0100
 Processing by GuestsController#show as HTML
@@ -52243,9 +52018,9 @@ Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:36:47 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52285,9 +52060,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:12:32 +
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:36:48 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52320,9 +52095,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:12:33 +0
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:36:48 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52355,9 +52130,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:12:34 +01
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:36:49 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52404,9 +52179,9 @@ Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:37:13 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52439,9 +52214,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:13:31 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:37:13 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52474,9 +52249,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:13:32 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:37:14 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52516,9 +52291,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:13:45 +
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:37:15 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52551,9 +52326,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:13:46 +0
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:37:34 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52593,9 +52368,9 @@ Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:37:37 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52635,9 +52410,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:13:54 +
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:37:37 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52670,9 +52445,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:13:55 +0
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:37:37 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52705,9 +52480,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:13:56 +01
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:37:37 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/guests"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52755,9 +52530,9 @@ Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:37:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52790,9 +52565,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:14:03 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:37:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52825,9 +52600,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:14:04 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:37:55 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52878,9 +52653,9 @@ Completed 200 OK in 174ms (Views: 165.0ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:38:48 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52913,9 +52688,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:14:13 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:38:49 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52948,9 +52723,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:14:14 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:38:49 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -52990,9 +52765,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:14:24 +
 =======
 Started GET "/guests" for 127.0.0.1 at 2019-03-14 18:38:49 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53032,16 +52807,16 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 368ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `create' for #<#<Class:0x00007f47d8344b68>:0x0000555c4d259960>):
     18:                           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
     19:                           <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-    20:                          
+    20:
     21: <% create %>
-    22: 
-    23: 
-    24:                            
-  
+    22:
+    23:
+    24:
+
 app/views/guests/index.html.erb:21:in `_app_views_guests_index_html_erb__890920428740307814_69973273357400'
 Started GET "/" for 127.0.0.1 at 2019-03-14 18:57:23 +0100
 Processing by GuestsController#index as HTML
@@ -53065,9 +52840,9 @@ Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:57:23 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53100,9 +52875,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:14:26 +01
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:57:23 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53142,9 +52917,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:14:33 +
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:57:23 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53174,7 +52949,7 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:14:34 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 =======
 Started GET "/" for 127.0.0.1 at 2019-03-14 18:57:28 +0100
@@ -53198,10 +52973,10 @@ Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:57:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53231,14 +53006,14 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:14:35 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:57:28 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53280,9 +53055,9 @@ Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:16:53 +
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:57:28 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53338,9 +53113,9 @@ Completed 200 OK in 164ms (Views: 163.0ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 18:58:24 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53373,9 +53148,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:16:55 +01
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 18:58:24 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53412,9 +53187,9 @@ Completed 200 OK in 144ms (Views: 139.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:17:14 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53443,14 +53218,14 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:17:15 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 18:58:24 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53480,9 +53255,9 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:17:16 +0100
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53529,9 +53304,9 @@ Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 19:06:19 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53564,9 +53339,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:19:28 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 19:06:20 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53599,9 +53374,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:19:29 +01
 =======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 19:06:20 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53630,9 +53405,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/blurred-image-1.jpg"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53665,9 +53440,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/blurred-image-1.jpg"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53700,9 +53475,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/blurred-image-1.jpg"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53753,16 +53528,16 @@ Processing by GuestsController#index as HTML
 Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `create' for #<#<Class:0x00007fa25d0bb1f0>:0x00007fa250727cd0>):
     18:                           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
     19:                           <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-    20:                          
+    20:
     21: <% create %>
-    22: 
-    23: 
-    24:                            
-  
+    22:
+    23:
+    24:
+
 app/views/guests/index.html.erb:21:in `_app_views_guests_index_html_erb__1414723288227212415_70167657088880'
 Started GET "/" for 127.0.0.1 at 2019-03-14 19:14:28 +0100
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -53775,9 +53550,9 @@ Completed 200 OK in 170ms (Views: 162.2ms | ActiveRecord: 0.0ms)
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-14 19:14:28 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53810,9 +53585,9 @@ Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:21:56 +0
 =======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-14 19:14:29 +0100
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53846,9 +53621,9 @@ Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:21:57 +01
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-14 19:14:29 +0100
 >>>>>>> master
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
-  
+
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53877,9 +53652,9 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 <<<<<<< HEAD
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/img/blurred-image-1.jpg"):
-  
+
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
@@ -53914,3 +53689,103 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 =======
 >>>>>>> 26ff74cd9be03e7c22a2796e7db15f3deb43a4b8
+Started GET "/" for 127.0.0.1 at 2019-03-15 11:29:52 +0100
+Processing by GuestsController#index as HTML
+  Rendering guests/index.html.erb within layouts/application
+  Rendered guests/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-15 11:29:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-15 11:29:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-15 11:29:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
