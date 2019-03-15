@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :whos
-  resources :guests, only: [:new, :create, :show]
+  resources :guests, only: [:new, :create, :show] 
 
 
 root 'guests#index'

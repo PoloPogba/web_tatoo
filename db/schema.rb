@@ -56,41 +56,6 @@ ActiveRecord::Schema.define(version: 2019_03_14_144451) do
     t.index ["who_id"], name: "index_formusers_on_who_id"
   end
 
-  create_table "formfuctions", force: :cascade do |t|
-    t.bigint "formuser_id"
-    t.bigint "function_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["formuser_id"], name: "index_formfuctions_on_formuser_id"
-    t.index ["function_id"], name: "index_formfuctions_on_function_id"
-  end
-
-  create_table "forms", force: :cascade do |t|
-    t.bigint "guest_id"
-    t.bigint "who_id"
-    t.bigint "activity_id"
-    t.bigint "type_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["activity_id"], name: "index_forms_on_activity_id"
-    t.index ["guest_id"], name: "index_forms_on_guest_id"
-    t.index ["type_id"], name: "index_forms_on_type_id"
-    t.index ["who_id"], name: "index_forms_on_who_id"
-  end
-
-  create_table "formusers", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "who_id"
-    t.bigint "activity_id"
-    t.bigint "type_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["activity_id"], name: "index_formusers_on_activity_id"
-    t.index ["type_id"], name: "index_formusers_on_type_id"
-    t.index ["user_id"], name: "index_formusers_on_user_id"
-    t.index ["who_id"], name: "index_formusers_on_who_id"
-  end
-
   create_table "functions", force: :cascade do |t|
     t.string "title"
     t.decimal "price"
