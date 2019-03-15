@@ -10,22 +10,25 @@
         </div>
         <div class="col-md-6 ml-auto text-left">
           <h2>Je suis...</h2>
-          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
+          
 
       
 
 
+                       <%= form_tag guests_path(:number => 1), method: :post do %>
+                       <%= submit_tag 'Un particulier', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag guests_path(:number => 2), method: :post do %>
+                       <%= submit_tag 'Une entreprise ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag guests_path(:number => 3), method: :post do %>
+                       <%= submit_tag 'Une association ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
 
 
-
-
-                         <%= form_tag guests_path, method: :post do %>
-
-                         <%= submit_tag 'Call ', class:"btn btn-warning btn-round btn-lg" %>
-
-                         <% end %>
+                       
 
                       
 
