@@ -10,6 +10,7 @@
         </div>
         <div class="col-md-6 ml-auto text-left">
           <h2>Je suis...</h2>
+<<<<<<< HEAD
           <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
           <%=link_to "Un particulier", guests_path(@guest), class:"btn btn-warning btn-round btn-lg" %>
           <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
@@ -21,27 +22,42 @@
 
 <%=@number %>
           <% end %>
+=======
+          
+
+      
+
+>>>>>>> master
+
+                       <%= form_tag guests_path(:number => 1), method: :post do %>
+                       <%= submit_tag 'Un particulier', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag guests_path(:number => 2), method: :post do %>
+                       <%= submit_tag 'Une entreprise ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag guests_path(:number => 3), method: :post do %>
+                       <%= submit_tag 'Une association ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+
+                       
 
 
 
 
-                         <%= form_tag guests_path, method: :post do %>
-
-                         <%= submit_tag 'Call ', class:"btn btn-warning btn-round btn-lg" %>
-
-                         <% end %>
 
 
 
 
 
 
+<<<<<<< HEAD
 
 
-
-
-
-
+=======
+>>>>>>> master
 
         </div>
       </div>
@@ -66,14 +82,18 @@
     <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
   </div>
 </div>
+
+
+
 <script type="text/javascript">
 
     var button = function() {
-    var colorchange = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
-    colorchange[0].style.color = "red"
+    $number = 3;
+    
     };
     var where = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
-    where[1].addEventListener("click", create);
+    where[3].addEventListener("click", button);
+  
 </script>
  </body>
  </html>
