@@ -10,24 +10,10 @@
         </div>
         <div class="col-md-6 ml-auto text-left">
           <h2>Je suis...</h2>
-<<<<<<< HEAD
-          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-          <%=link_to "Un particulier", guests_path(@guest), class:"btn btn-warning btn-round btn-lg" %>
-          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
 
-          <%= form_tag guests_path, method: :post do %>
 
-          <%= submit_tag 'Call ', class:"btn btn-warning btn-round btn-lg" %>
 
-<%=@number %>
-          <% end %>
-=======
-          
 
-      
-
->>>>>>> master
 
                        <%= form_tag guests_path(:number => 1), method: :post do %>
                        <%= submit_tag 'Un particulier', class:"btn btn-warning btn-round btn-lg" %>
@@ -42,7 +28,6 @@
                        <% end %>
 
 
-                       
 
 
 
@@ -53,11 +38,7 @@
 
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> master
 
         </div>
       </div>
@@ -65,23 +46,7 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-6 px-0 ">
-    <div class="card card-fashion card-container ">
-      <h4 class="card-title">The view from south Texas in one Picture</h4>
-      <div class="card-body">
-        <div class="container ">
-          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 px-0">
-    <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
-  </div>
-</div>
+
 
 
 
@@ -89,11 +54,11 @@
 
     var button = function() {
     $number = 3;
-    
+
     };
     var where = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
     where[3].addEventListener("click", button);
-  
+
 </script>
  </body>
  </html>
