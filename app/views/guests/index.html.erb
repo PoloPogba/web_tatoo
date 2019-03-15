@@ -1,32 +1,37 @@
-   <div class="page-header header-filter" filter-color="greenblue">
-          <%= image_tag "cover.jpg", :class=>"page-header-image" %>
-        <div class="content-center">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 text-right">
-                        <h1 class="title">LE PROGRAMMEUR</h1>
-                        <h4 class="description">Trouves ton dev pour ton super website!</h4>
-
-
-                    </div>
-
-                      <div class="col-md-6 ml-auto text-left">
-                          <h2>Je suis...</h2>
-                         <%=link_to "Un particulier", method: :post, action: :create, class:"btn btn-warning btn-round btn-lg" %>
-                          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-                          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
-                          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
-                         
-
-
-
-                           
-
-                      </div>
-                    </div>
-
-
-            </div>
+<div class="page-header header-filter" filter-color="greenblue">
+  <%= image_tag "cover.jpg", :class=>"page-header-image" %>
+  <div class="content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h1 class="title">LE PROGRAMMEUR</h1>
+          <h4 class="description">Trouves ton dev pour ton super website!</h4>
         </div>
+        <div class="col-md-6 ml-auto text-left">
+          <h2>Je suis...</h2>
+          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
+          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
+          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 px-0 ">
+    <div class="card card-fashion card-container ">
+      <h4 class="card-title">The view from south Texas in one Picture</h4>
+      <div class="card-body">
+        <div class="container ">
+          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
+          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
+          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 px-0">
+    <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
+  </div>
+</div>
