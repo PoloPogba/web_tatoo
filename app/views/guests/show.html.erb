@@ -6,10 +6,9 @@
       <h4 class="card-title">The view from south Texas in one Picture</h4>
       <div class="card-body">
          <strong>  JE SUIS LE VISITEUR NUMERO <%= @id_guest.id %> </strong>
-        <div class="container ">
-          <a class="btn btn-warning btn-round btn-lg">Un particulier</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une entreprise</a><br>
-          <a class=" btn btn-warning btn-round btn-lg">Une association</a>
+         <div class="container ">
+                       
+                      
         </div>
       </div>
     </div>
@@ -20,6 +19,76 @@
 
 </div>
 </div>
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 1), method: :post do %>
+                       <%= submit_tag 'Restauration ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 2), method: :post do %>
+                       <%= submit_tag 'Vêtements/Textile ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 3), method: :post do %>
+                       <%= submit_tag 'Plomberie', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 4), method: :post do %>
+                       <%= submit_tag 'Electricité ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 5), method: :post do %>
+                       <%= submit_tag 'Serrurerie ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 7), method: :post do %>
+                       <%= submit_tag 'Cordonnerie ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 8), method: :post do %>
+                       <%= submit_tag 'Start-up', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 9), method: :post do %>
+                       <%= submit_tag 'B2B', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 10), method: :post do %>
+                       <%= submit_tag 'Musique ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 11), method: :post do %>
+                       <%= submit_tag 'Design ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 12), method: :post do %>
+                       <%= submit_tag 'Beauté', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 13), method: :post do %>
+                       <%= submit_tag 'Bien-être ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 14), method: :post do %>
+                       <%= submit_tag 'Evènementiel ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 15), method: :post do %>
+                       <%= submit_tag 'Hôtelerie', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+
+                       <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 16), method: :post do %>
+                       <%= submit_tag 'Sportive', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                        <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 17), method: :post do %>
+                       <%= submit_tag 'Culture/Loisirs ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                        <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 18), method: :post do %>
+                       <%= submit_tag 'Action Social/Santé/Humanitaire ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                        <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 19), method: :post do %>
+                       <%= submit_tag 'Défense des droits', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                        <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 20), method: :post do %>
+                       <%= submit_tag 'Education/Formation/Insertion ', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
+                        <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 22), method: :post do %>
+                       <%= submit_tag 'Autres', class:"btn btn-warning btn-round btn-lg" %>
+                       <% end %>
 
 
 
@@ -31,3 +100,23 @@
             </div>
         </div>
     </div>
+
+                   
+                   
+                        
+                       
+
+                       
+                                
+                          
+                             
+
+                         
+                      
+                          
+                   
+    
+               
+   
+Education/Formation/Insertion      
+                             
