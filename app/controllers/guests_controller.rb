@@ -13,7 +13,7 @@ class GuestsController < ApplicationController
    
     def create 
 
-        @number = params[:number]
+       @number = params[:number]
        @last_guest_id = Guest.last.id
        
        
