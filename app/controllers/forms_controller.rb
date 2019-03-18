@@ -20,6 +20,14 @@ class FormsController < ApplicationController
           end
     end
 
+    def show 
+
+        @id_guest = Guest.find(params['id'])
+        @find_guest = Guest.find(params[:guest_id])
+        @id_form = Form.find_by(guest_id: @find_guest.id)
+
+    end
+
 
     def update 
 ###################TESTING SHIT #############################

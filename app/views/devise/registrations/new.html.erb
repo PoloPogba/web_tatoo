@@ -1,5 +1,7 @@
 <h2>Sign up</h2>
 
+<p> Bravo, vous venez de finir de remplir votre devis, pour y accéder gratuitement, merci de renseigner votre adresse email et votre nom ! </p>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -18,10 +20,7 @@
     <%= f.text_field :company_name, autofocus: true, autocomplete: "company_name" %>
   </div>
   
-   <div class="field">
-    <%= f.label :phone_number %><br />
-    <%= f.text_field :phone_number, autofocus: true, autocomplete: "phone_number" %>
-  </div>
+  
   
   <div class="field">
     <%= f.label :email %><br />

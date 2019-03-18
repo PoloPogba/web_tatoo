@@ -19,33 +19,33 @@
 
 </div>
 </div>
-                       <%= form_tag guests_path(:number => 1), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 1), method: :post do %>
                        <%= submit_tag 'Un Blog', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
-                       <%= form_tag guests_path(:number => 2), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 2), method: :post do %>
                        <%= submit_tag 'Un CV', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
-                       <%= form_tag guests_path(:number => 3), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 3), method: :post do %>
                        <%= submit_tag 'Un PortFolio ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
-                        <%= form_tag guests_path(:number => 4), method: :post do %>
+                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 4), method: :post do %>
                        <%= submit_tag 'Site Vitrine', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
-                       <%= form_tag guests_path(:number => 5), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 5), method: :post do %>
                        <%= submit_tag 'E-commerce ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
-                       <%= form_tag guests_path(:number => 6), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 6), method: :post do %>
                        <%= submit_tag 'Quelque chose de créatif ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
-                        <%= form_tag guests_path(:number => 7), method: :post do %>
+                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 7), method: :post do %>
                        <%= submit_tag 'Quelque chose de spécifique', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
-                       <%= form_tag guests_path(:number => 8), method: :post do %>
+                       <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:guest_id => @id_guest.id,:type_id => 8), method: :post do %>
                        <%= submit_tag 'Quelque chose de fun ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 

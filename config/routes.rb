@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :whos
   resources :guests, only: [:new, :create, :show] do 
-  resources :forms
+    resources :forms do 
+      resources :types
+    end
   end
 
 root 'guests#index'
