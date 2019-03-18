@@ -6781,7 +6781,8 @@ Created using IcoMoon - icomoon.io
     background-position: center center;
     width: 100%;
     height: 100%;
-    z-index: -1; }
+    z-index: -1;
+  object-fit: cover}
   .page-header > .content {
     margin-top: 11%;
     text-align: center;
