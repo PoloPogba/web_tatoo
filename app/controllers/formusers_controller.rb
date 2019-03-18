@@ -1,7 +1,7 @@
 class FormusersController < ApplicationController
 
     def show
-    @id_formusers = Formuser.find(1)
+    @formuser = Formuser.find_by(user_id: current_user.id)
     
     end
 end
