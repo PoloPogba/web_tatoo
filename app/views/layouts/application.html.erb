@@ -15,13 +15,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-  
+
     <nav class="navbar navbar-expand-lg bg-info fixed-top navbar-transparent" color-on-scroll="500">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="http://demos.creative-tim.com/marketplace/now-ui-kit-pro/presentation.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom">
-                  Now Ui Kit Pro
-          </a>
+                  <%= image_tag "logolesitefrancais.png", :class=>"navbar-brand", :rel=>"tooltip", :title=>"Designed by Yannick. Coded by Creative Mister AYS"%>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar bar1"></span>
             <span class="navbar-toggler-bar bar2"></span>
@@ -30,65 +29,22 @@
           </button>
         </div>
         <div class="collapse navbar-collapse " data-nav-image="./assets/img/blurred-image-1.jpg" data-color="blue">
-          <ul class="navbar-nav ml-auto" >
+          <ul class="navbar-nav ml-auto">
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" href="" data-toggle="dropdown">
-                <i class="now-ui-icons design_app"></i>
-                <p>CONNECTE TOI TOUT DE SUITE</p>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-               <li>
-                      <%=link_to "Se connecter", new_user_session_path %>
-             
-               </li>
-               <li>
-                  
-                    <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete" %>
-
-                    </li>
-                    <li>
-                    <%= link_to "Inscription", new_user_registration_path %>
-                    </li>                                                                          
-
-                </a>
-              </div>
-            </li>
-
-            <li>
-            <%= link_to "MON DEVIS", formuser_path(1) %>
-            </li>
-
-            
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <div class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
                 <i class="now-ui-icons files_paper" aria-hidden="true"></i>
-                <p>Sections</p>
-              </a>
+                <p>CONNECTE TOI TOUT DE SUITE</p>
+              </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="./sections.html#headers">
-                  <i class="now-ui-icons shopping_box"></i> Headers
-                </a>
-                <a class="dropdown-item" href="./sections.html#features">
-                  <i class="now-ui-icons ui-2_settings-90"></i> Features
-                </a>
-                <a class="dropdown-item" href="./sections.html#blogs">
-                  <i class="now-ui-icons text_align-left"></i> Blogs
-                </a>
-                <a class="dropdown-item" href="./sections.html#teams">
-                  <i class="now-ui-icons sport_user-run"></i> Teams
-                </a>
-                <a class="dropdown-item" href="./sections.html#projects">
-                  <i class="now-ui-icons education_paper"></i> Projects
-                </a>
-                <a class="dropdown-item" href="./sections.html#pricing">
-                  <i class="now-ui-icons business_money-coins"></i> Pricing
-                </a>
-                <a class="dropdown-item" href="./sections.html#testimonials">
-                  <i class="now-ui-icons ui-2_chat-round"></i> Testimonials
-                </a>
-                <a class="dropdown-item" href="./sections.html#contactus">
-                  <i class="now-ui-icons tech_mobile"></i> Contact Us
-                </a>
+
+                  <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>
+
+
+                       <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
+
+                       <%= link_to "Inscription", new_user_registration_path, :class=>"dropdown-item" %>
+
               </div>
             </li>
             <li class="nav-item dropdown">

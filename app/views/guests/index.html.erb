@@ -1,29 +1,32 @@
-<div class="page-header header-filter" filter-color="greenblue">
+<div class="page-header">
   <%= image_tag "cover.jpg", :class=>"page-header-image" %>
-  <div class="content-center">
-    <div class="container">
+
+
       <div class="row">
-        <div class="col-md-6 text-right">
-          <h1 class="title">LE PROGRAMMEUR</h1>
-          <h4 class="description">Trouves ton dev pour ton super website!</h4>
+        <div class="col-md-5" style="top:40px; margin:5em">
+
+          <h1 class="title">Nous réalisons le site internet qui vous sera utile.</h1>
+          <h4 class="description">Lesitefrancais vous propose de bons programmeurs et designer, et suit de près la réalisation de votre site internet jusqu'à la fin.</h4>
+
         </div>
-        <div class="col-md-6 ml-auto text-left">
-          <h2>Je suis...</h2>
+        <div class="col-md-4" style="top:40px; margin:5em">
 
-  
-
+        <h2 style="margin:0em">J'ai besoin d'un site pour:</h2>
 
 
-                       <%= form_tag guests_path(:number => 1), method: :post do %>
-                       <%= submit_tag 'Un particulier', class:"btn btn-warning btn-round btn-lg" %>
+
+
+
+                     <%= form_tag guests_path(:number => 1), method: :post do %>
+                       <%= submit_tag 'Moi Même', class:"btn btn-primary btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 2), method: :post do %>
-                       <%= submit_tag 'Une entreprise ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Entreprise ', class:"btn btn-info btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 3), method: :post do %>
-                       <%= submit_tag 'Une association ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Association ', class:"btn btn-info btn-round btn-lg" %>
                        <% end %>
 
 
@@ -41,14 +44,15 @@
 
         </div>
       </div>
+
     </div>
   </div>
-</div>
+
 
 <div class="cards">
                     <div class="container">
                         <div class="title">
-                            <h3>
+                          <h3>
                                 <small>Full Background Cards</small>
                             </h3>
                         </div>
@@ -131,21 +135,11 @@
 
 
 <script type="text/javascript">
-<<<<<<< HEAD
-
-var img1 = document.getElementById("img1");
-var change = function(){
-  img1.style.width = "200%";
-img1.style.height = "70%"};
-img1.addEventListener("toggle", change);
-
-=======
     var button = function() {
     $number = 3;
     };
     var where = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
     where[3].addEventListener("click", button);
->>>>>>> master
 </script>
  </body>
 </html>
