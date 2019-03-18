@@ -1221,7 +1221,7 @@ select.selectpicker {
 
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
   display: inline-block;
-  overflow: hidden;
+  overflow: scroll;
   text-overflow: ellipsis;
   width: 100%;
   text-align: left; }
@@ -10317,3 +10317,8 @@ Created using IcoMoon - icomoon.io
   .section-images .hero-images-container-2 {
     top: 66%;
     right: 14%; } }
+
+
+.dropdown-overflow{
+  overflow:scroll !important;
+}

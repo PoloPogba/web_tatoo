@@ -3,15 +3,14 @@
   <div class="row">
   <div class="col-md-6 px-0" >
     <div class="card card-fashion card-container ">
-      <h4 class="card-title">The view from south Texas in one Picture</h4>
-      <div class="card-body">
 
-         <div class="container ">
+<div class="content-center">
+  <div class="container">
            <div class="dropdown">
-             <button class="btn btn-primary btn-round dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <button class="btn btn-primary btn-round dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Dropdown
              </button>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform;">
+             <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll">
                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 1), method: :post do %>
                <%= submit_tag 'Restauration ', class:"btn btn-warning btn-round btn-lg" %>
                <% end %>
@@ -80,12 +79,9 @@
                 <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 22), method: :post do %>
                <%= submit_tag 'Autres', class:"dropdown-item" %>
                <% end %>
-
+</div>
              </div>
-           </div>
-
-
-        </div>
+          </div>
       </div>
     </div>
   </div>
