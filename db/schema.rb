@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 2019_03_14_144451) do
 
   create_table "activities", force: :cascade do |t|
     t.string "title"
+    t.bigint "who_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["who_id"], name: "index_activities_on_who_id"
   end
 
   create_table "formfuctions", force: :cascade do |t|
@@ -59,8 +61,10 @@ ActiveRecord::Schema.define(version: 2019_03_14_144451) do
   create_table "functions", force: :cascade do |t|
     t.string "title"
     t.decimal "price"
+    t.bigint "type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["type_id"], name: "index_functions_on_type_id"
   end
 
   create_table "guests", force: :cascade do |t|
@@ -70,8 +74,10 @@ ActiveRecord::Schema.define(version: 2019_03_14_144451) do
 
   create_table "types", force: :cascade do |t|
     t.string "title"
+    t.bigint "activity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_types_on_activity_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -90,7 +96,6 @@ ActiveRecord::Schema.define(version: 2019_03_14_144451) do
   end
 
   create_table "whos", force: :cascade do |t|
-    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
