@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class FunctionsController < ApplicationController
     def show
         @user = User.find(current_user.id)
         @form = Form.find_by(user_id: current_user.id)

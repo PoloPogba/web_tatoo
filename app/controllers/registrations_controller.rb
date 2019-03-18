@@ -6,16 +6,16 @@ class RegistrationsController < Devise::RegistrationsController
         if resource.persisted?
             @id_guest = Guest.last.id
             @id_user = User.last.id
-            @formuser = Formuser.find_by(guest_id: @id_guest)
-            @formuser.user_id = @id_user
-            @formuser.save
+            @form = Form.find_by(guest_id: @id_guest)
+            @form.user_id = @id_user
+            @form.save
            
          
         end
     end
+   
+    
+  
 
-    def redirect 
-        redirect_to formuser_path(1)
-    end
 
 end
