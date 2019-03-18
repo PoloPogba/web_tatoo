@@ -1,34 +1,32 @@
 <div class="page-header">
   <%= image_tag "cover.jpg", :class=>"page-header-image" %>
-  <div class="content-center">
-    <div class="container">
+
+
       <div class="row">
-        <div class="col-md-6 text-right">
+        <div class="col-md-5" style="top:40px; margin:5em">
+
           <h1 class="title">Nous réalisons le site internet qui vous sera utile.</h1>
           <h4 class="description">Lesitefrancais vous propose de bons programmeurs et designer, et suit de près la réalisation de votre site internet jusqu'à la fin.</h4>
+
         </div>
-<<<<<<< HEAD
-        <div class="col-md-6 ml-auto">
-          <h2 class="text-left">Je suis...</h2>
-=======
-        <div class="col-md-6 ml-auto text-left">
-          <h2>J'ai besoin d'un site pour:</h2>
->>>>>>> master
+        <div class="col-md-4" style="top:40px; margin:5em">
 
-  
+        <h2 style="margin:0em">J'ai besoin d'un site pour:</h2>
 
 
 
-                       <%= form_tag guests_path(:number => 1), method: :post do %>
-                       <%= submit_tag 'Moi Même', class:"btn btn-warning btn-round btn-lg" %>
+
+
+                     <%= form_tag guests_path(:number => 1), method: :post do %>
+                       <%= submit_tag 'Moi Même', class:"btn btn-primary btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 2), method: :post do %>
-                       <%= submit_tag 'Mon Entreprise ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Entreprise ', class:"btn btn-info btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 3), method: :post do %>
-                       <%= submit_tag 'Mon Association ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Association ', class:"btn btn-info btn-round btn-lg" %>
                        <% end %>
 
 
@@ -46,14 +44,15 @@
 
         </div>
       </div>
+
     </div>
   </div>
-</div>
+
 
 <div class="cards">
                     <div class="container">
                         <div class="title">
-                            <h3>
+                          <h3>
                                 <small>Full Background Cards</small>
                             </h3>
                         </div>
