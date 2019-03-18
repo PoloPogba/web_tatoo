@@ -2925,14 +2925,17 @@ fieldset[disabled]
 .btn-lg {
   font-size: 1em;
   border-radius: 0.25rem;
-  padding: 15px 48px; }
+  padding: 15px 48px;
+width : 100%;
+}
   .btn-lg.btn-simple {
     padding: 14px 47px; }
 
 .btn-sm {
   font-size: 14px;
   border-radius: 0.1875rem;
-  padding: 5px 15px; }
+  padding: 5px 15px;
+  width : 20em;}
   .btn-sm.btn-simple {
     padding: 4px 14px; }
 
