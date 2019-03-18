@@ -45,16 +45,107 @@
   </div>
 </div>
 
+<div class="cards">
+                    <div class="container">
+                        <div class="title">
+                            <h3>
+                                <small>Full Background Cards</small>
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4" >
+                              <%= image_tag "cover.jpg", :class=>"card card-background", :id=>"img1"%>
+
+                                    <div class="card-body" >
+                                        <div class="card-title text-left">
+                                            <h3>How wild Animals live in the National Forest</h3>
+                                        </div>
+                                        <div class="card-footer text-left">
+                                            <div class="stats">
+                                                <span>
+                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
+                                                </span>
+                                                <span>
+                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
+                                                </span>
+                                            </div>
+                                            <div class="stats-link pull-right">
+                                                <a href="#pablo" class="footer-link">Environment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="col-md-4" id="img2">
+                                <%= image_tag "cover.jpg", :class=>"card card-background" %>
+                                    <div class="card-body">
+                                        <div class="card-title text-left">
+                                            <h3>How wild Animals live in the National Forest</h3>
+                                        </div>
+                                        <div class="card-footer text-left">
+                                            <div class="stats-link">
+                                                <a href="#pablo" class="footer-link">Environment</a>
+                                            </div>
+                                            <div class="stats stats-right">
+                                                <span>
+                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
+                                                </span>
+                                                <span>
+                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="col-md-4" id="img3">
+                                <%= image_tag "cover.jpg", :class=>"card card-background" %>
+                                    <div class="card-body">
+                                        <div class="card-title text-left">
+                                            <h3>How wild Animals live in the National Forest</h3>
+                                        </div>
+                                        <div class="card-footer text-left">
+                                            <div class="stats">
+                                                <span>
+                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
+                                                </span>
+                                                <span>
+                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
+                                                </span>
+                                            </div>
+                                            <div class="stats-link pull-right">
+                                                <a href="#pablo" class="footer-link">Environment</a>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <center>
+                        <button class="btn btn-info">Voir plus </button>
+                        </center>
+                    </div>
+                </div>
 
 
 
 
 <script type="text/javascript">
+<<<<<<< HEAD
+
+var img1 = document.getElementById("img1");
+var change = function(){
+  img1.style.width = "200%";
+img1.style.height = "70%"};
+img1.addEventListener("toggle", change);
+
+=======
     var button = function() {
     $number = 3;
     };
     var where = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
     where[3].addEventListener("click", button);
+>>>>>>> master
 </script>
  </body>
 </html>
