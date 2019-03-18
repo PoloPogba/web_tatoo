@@ -1,7 +1,8 @@
 class Formuser < ApplicationRecord
-    belongs_to :user
-    belongs_to :who
-    belongs_to :activity
-    belongs_to :type
+    belongs_to :user, optional: true
+    belongs_to :who, optional: true
+    belongs_to :activity, optional: true
+    belongs_to :type, optional: true
+    belongs_to :guest, optional: true
     has_many :formfunctions
 end

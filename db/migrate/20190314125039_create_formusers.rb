@@ -5,6 +5,7 @@ class CreateFormusers < ActiveRecord::Migration[5.2]
       t.belongs_to :who
       t.belongs_to :activity
       t.belongs_to :type
+      t.belongs_to :guest
       t.timestamps
     end
   end

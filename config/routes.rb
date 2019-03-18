@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'registrations'}
   resources :whos
   resources :guests, only: [:new, :create, :show] do 
     resources :forms do 
