@@ -48,9 +48,11 @@ ActiveRecord::Schema.define(version: 2019_03_18_104634) do
     t.bigint "who_id"
     t.bigint "activity_id"
     t.bigint "type_id"
+    t.bigint "guest_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["activity_id"], name: "index_formusers_on_activity_id"
+    t.index ["guest_id"], name: "index_formusers_on_guest_id"
     t.index ["type_id"], name: "index_formusers_on_type_id"
     t.index ["user_id"], name: "index_formusers_on_user_id"
     t.index ["who_id"], name: "index_formusers_on_who_id"
