@@ -1,29 +1,34 @@
-<div class="page-header header-filter" filter-color="greenblue">
+<div class="page-header">
   <%= image_tag "cover.jpg", :class=>"page-header-image" %>
   <div class="content-center">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-right">
-          <h1 class="title">LE PROGRAMMEUR</h1>
-          <h4 class="description">Trouves ton dev pour ton super website!</h4>
+          <h1 class="title">Nous réalisons le site internet qui vous sera utile.</h1>
+          <h4 class="description">Lesitefrancais vous propose de bons programmeurs et designer, et suit de près la réalisation de votre site internet jusqu'à la fin.</h4>
         </div>
+<<<<<<< HEAD
         <div class="col-md-6 ml-auto">
           <h2 class="text-left">Je suis...</h2>
+=======
+        <div class="col-md-6 ml-auto text-left">
+          <h2>J'ai besoin d'un site pour:</h2>
+>>>>>>> master
 
   
 
 
 
                        <%= form_tag guests_path(:number => 1), method: :post do %>
-                       <%= submit_tag 'Un particulier', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Moi Même', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 2), method: :post do %>
-                       <%= submit_tag 'Une entreprise ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Entreprise ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
                        <%= form_tag guests_path(:number => 3), method: :post do %>
-                       <%= submit_tag 'Une association ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Mon Association ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
 
 
