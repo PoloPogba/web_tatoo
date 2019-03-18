@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :types
     end
   end
+  resources :users
 
 root 'guests#index'
 
