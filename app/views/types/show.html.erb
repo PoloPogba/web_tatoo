@@ -5,10 +5,10 @@
     <div class="card card-fashion card-container ">
       <h4 class="card-title">The view from south Texas in one Picture</h4>
       <div class="card-body">
-         
+
          <div class="container ">
-                       
-                      
+
+
         </div>
       </div>
     </div>
@@ -40,3 +40,52 @@ Je voudrai aussi ajouter a mon site :
                        <%= form_tag new_user_registration_path(:number => 4), method: :get do %>
                        <%= submit_tag 'Une application mobile ', class:"btn btn-warning btn-round btn-lg" %>
                        <% end %>
+
+
+<div class="wrapper">
+
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                          <i class="now-ui-icons users_single-02"></i> Login Modal
+                      </button>
+                  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade modal-info show" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block;">
+      <div class="modal-dialog modal-login">
+          <div class="modal-content">
+              <div class="card card-login card-plain">
+                  <div class="modal-header justify-content-center">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          <i class="now-ui-icons ui-1_simple-remove"></i>
+                      </button>
+                      <div class="header header-primary text-center">
+                          <div class="logo-container">
+                              <img src="assets/img/now-logo.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form" method="" action="">
+                          <div class="card-body">
+                              <div class="input-group form-group-no-border input-lg">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="First Name...">
+                              </div>
+                              <div class="input-group form-group-no-border input-lg">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="now-ui-icons ui-1_lock-circle-open"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Password...">
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer text-center">
+                      <a href="#pablo" class="btn btn-neutral btn-round btn-lg btn-block">Get Started</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
