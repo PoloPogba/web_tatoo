@@ -26,19 +26,19 @@ Je voudrai aussi ajouter a mon site :
 
 
                        <%= form_tag new_user_registration_path(:number => 1), method: :get do %>
-                       <%= submit_tag 'Un chatbot', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= check_box 'Un chatbot', class:"form-check-label" %>
                        <% end %>
 
                        <%= form_tag new_user_registration_path(:number => 2), method: :get do %>
-                       <%= submit_tag 'Un Blog ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= check_box 'Un Blog ', class:"form-check-label" %>
                        <% end %>
 
                        <%= form_tag new_user_registration_path(:number => 3), method: :get do %>
-                       <%= submit_tag 'Un logo professionnel ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= check_box 'Un logo professionnel ', class:"form-check-label" %>
                        <% end %>
 
                        <%= form_tag new_user_registration_path(:number => 4), method: :get do %>
-                       <%= submit_tag 'Une application mobile ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= check_box 'Une application mobile ', class:"form-check-label" %>
                        <% end %>
 
 

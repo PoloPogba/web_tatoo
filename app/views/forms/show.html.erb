@@ -1,57 +1,54 @@
-                       <div class="page-header" >
+<div class="page-header" >
 
   <div class="row">
   <div class="col-md-6 px-0" >
     <div class="card card-fashion card-container ">
-      <h4 class="card-title">The view from south Texas in one Picture</h4>
-      <div class="card-body">
-         
-         <div class="container ">
-                       
-                      
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 px-0">
-    <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
-  </div>
 
-</div>
-</div>
+<div class="content-center">
+  <div class="container">
+           <div class="dropdown">
+             <button class="btn btn-info btn-round dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Dropdown
+             </button>
+             <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 1), method: :post do %>
-                       <%= submit_tag 'Un Blog', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Un Blog', class:"dropdown-item" %>
                        <% end %>
 
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 2), method: :post do %>
-                       <%= submit_tag 'Un CV', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Un CV', class:"dropdown-item" %>
                        <% end %>
 
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 3), method: :post do %>
-                       <%= submit_tag 'Un PortFolio ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Un PortFolio ', class:"dropdown-item" %>
                        <% end %>
                         <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 4), method: :post do %>
-                       <%= submit_tag 'Site Vitrine', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Site Vitrine', class:"dropdown-item" %>
                        <% end %>
 
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 5), method: :post do %>
-                       <%= submit_tag 'E-commerce ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'E-commerce ', class:"dropdown-item" %>
                        <% end %>
 
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 6), method: :post do %>
-                       <%= submit_tag 'Quelque chose de créatif ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Quelque chose de créatif ', class:"dropdown-item" %>
                        <% end %>
                         <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 7), method: :post do %>
-                       <%= submit_tag 'Quelque chose de spécifique', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Quelque chose de spécifique', class:"dropdown-item" %>
                        <% end %>
 
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 8), method: :post do %>
-                       <%= submit_tag 'Quelque chose de fun ', class:"btn btn-warning btn-round btn-lg" %>
+                       <%= submit_tag 'Quelque chose de fun ', class:"dropdown-item" %>
                        <% end %>
+                     </div>
+                                  </div>
+                               </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="col-md-6 px-0">
+                         <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
+                       </div>
 
-                       
-
-
-
-
-
+                     </div>
+                     </div>
