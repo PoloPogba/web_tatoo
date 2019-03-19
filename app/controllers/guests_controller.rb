@@ -21,11 +21,10 @@ class GuestsController < ApplicationController
         @form = Form.new
         @form.guest_id = @last_guest_id +1
         @form.who_id = @number
-        @formuser = Formuser.new
-        @formuser.guest_id = @last_guest_id +1
-        @formuser.who_id = @number
         
-         if @guest.save && @form.save && @formuser.save
+       
+        
+         if @guest.save && @form.save
              redirect_to guest_path(@guest.id)
          else 
              redirect_to root_path

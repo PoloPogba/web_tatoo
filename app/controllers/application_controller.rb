@@ -6,5 +6,13 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])  
     end
 
+    def after_sign_up_path_for(resource_or_scope)
+        if resource_or_scope.is_a?(User)
+          user_path(1)    
+        else
+          super
+        end
+      end
+
     
 end

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
-  devise_for :users, controllers: { registrations: 'registrations'}
+  devise_for :users, controllers: { :registrations => "registrations" } 
+     
+    
   resources :whos
   resources :guests, only: [:new, :create, :show] do 
     resources :forms do 
@@ -8,7 +10,8 @@ Rails.application.routes.draw do
     end
   end
   resources :users
-  resources :formusers
+  resources :functions
+  
 
 root 'guests#index'
 

@@ -13501,6 +13501,36 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE "webtatoolol_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7640877529564815585)[0m
+  ↳ bin/rails:9
+  [1m[35m (43.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (17.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7640877529564815585)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-03-18 11:04:47 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/tinmar/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GuestsController#index as HTML
+  Rendering guests/index.html.erb within layouts/application
+  Rendered guests/index.html.erb within layouts/application (242.8ms)
+Completed 200 OK in 336ms (Views: 316.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-18 11:04:48 +0100
+=======
 Started GET "/" for 127.0.0.1 at 2019-03-18 10:04:38 +0100
   [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/ABT/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
@@ -44748,6 +44778,7 @@ Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-18 18:08:32 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
   
@@ -44778,6 +44809,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-18 11:04:48 +0100
+=======
   
 ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
   
@@ -44814,6 +44848,7 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-18 18:08:35 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
   
@@ -44844,7 +44879,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-18 11:04:48 +0100
+=======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-18 18:08:36 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
   
@@ -44875,6 +44914,10 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/favicon.png"):
+=======
 Started GET "/" for 127.0.0.1 at 2019-03-18 18:09:37 +0100
 Processing by GuestsController#index as HTML
   Rendering guests/index.html.erb within layouts/application
@@ -44915,6 +44958,7 @@ puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   
 ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
+>>>>>>> master
   
 actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -44948,6 +44992,42 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+Started POST "/guests?number=1" for 127.0.0.1 at 2019-03-18 11:04:50 +0100
+Processing by GuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rT6HMcrlCZ/Hb1AWUSE24OjNBfE4CXwPsoCTnELRNVhzVu/1Sfg1wa3ZpPYw19xtW78ZDxRO8sDF8bBFGmevZQ==", "commit"=>"Un particulier", "number"=>"1"}
+  [1m[36mGuest Load (10.1ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" ORDER BY "guests"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/guests_controller.rb:17
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 15.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/guests_controller.rb:17:in `create'
+Started POST "/guests?number=2" for 127.0.0.1 at 2019-03-18 11:04:55 +0100
+Processing by GuestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"as2iTdvltOyLrbRRI8dVRgRU+e9owe5oQdiQpA1JNfe0pcqJWPiIsuEbQLFCMb/LtyblEUSGYKc2qbN9Vf+vyg==", "commit"=>"Une entreprise ", "number"=>"2"}
+  [1m[36mGuest Load (0.4ms)[0m  [1m[34mSELECT  "guests".* FROM "guests" ORDER BY "guests"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/guests_controller.rb:17
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/guests_controller.rb:17:in `create'
+Started GET "/" for 127.0.0.1 at 2019-03-18 11:09:29 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/tinmar/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GuestsController#index as HTML
+  Rendering guests/index.html.erb within layouts/application
+  Rendered guests/index.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-18 11:09:29 +0100
+=======
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-18 18:09:39 +0100
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
@@ -45018,6 +45098,7 @@ Completed 200 OK in 65ms (Views: 55.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/fonts/nucleo-outline.woff2" for 127.0.0.1 at 2019-03-18 18:12:35 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff2"):
   
@@ -45048,6 +45129,9 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-18 11:09:29 +0100
+=======
   
 ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css.map"):
   
@@ -45084,6 +45168,7 @@ puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
 Started GET "/fonts/nucleo-outline.woff" for 127.0.0.1 at 2019-03-18 18:12:37 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.woff"):
   
@@ -45114,7 +45199,11 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-18 11:09:30 +0100
+=======
 Started GET "/fonts/nucleo-outline.ttf" for 127.0.0.1 at 2019-03-18 18:12:38 +0100
+>>>>>>> master
   
 ActionController::RoutingError (No route matches [GET] "/fonts/nucleo-outline.ttf"):
   
