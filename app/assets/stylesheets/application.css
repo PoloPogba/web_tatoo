@@ -4858,11 +4858,11 @@ Created using IcoMoon - icomoon.io
   font-size: 1.5em; }
 
 .table-shopping .td-name {
-  min-width: 200px; }
+  min-width: 50px; }
 
 .table-shopping .td-number {
   text-align: right;
-  min-width: 145px; }
+  min-width: 50px; }
   .table-shopping .td-number small {
     margin-right: 3px; }
 

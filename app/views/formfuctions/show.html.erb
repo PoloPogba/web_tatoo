@@ -1,25 +1,29 @@
-                   <div class="page-header" >
+<div class="wrapper">
+<div class="page-header page-header-small" >
 
-  <div class="row">
-  <div class="col-md-6 px-0" >
-    <div class="card card-fashion card-container ">
-      <h4 class="card-title">The view from south Texas in one Picture</h4>
-      <div class="card-body">
-         
-         <div class="container ">
-                       
-                      
+            <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
+            <div class="content-center" >
+
+                <h3 class="title">Ryan Scheinder</h3>
+                <p class="category">Photographer</p>
+                <div class="content" style="display: flex;
+      justify-content: center; align-items: center;">
+                    <div class="social-description">
+                        <h2>26</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="social-description">
+                        <h2>26</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="social-description">
+                        <h2>48</h2>
+                        <p>Bookmarks</p>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="col-md-6 px-0">
-    <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
-  </div>
-
-</div>
-</div>
-
 
 JE SUIS LUTILISATEUR NUMERO <%= current_user.id %>
 MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
@@ -31,14 +35,73 @@ MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
 <%= @type.title %></br>
 ---------------------------------------------------------------------------------</br>
 <% @i = 1 %>
-<% @functions.each do |function| %>
 
-<%= function.title %> 
-<%= form_tag  formfuctions_path(:number => @i), method: :post do %>
-<%= submit_tag 'Ajouter', class:"btn btn-warning btn-round btn-sm" %>
-<% end %></br>
-<%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
-<%= submit_tag 'Supprimer', class:"btn btn-warning btn-round btn-sm" %>
-<% end %></br>
-<% @i = @i + 1 %>
-<%end%>
+
+
+</br>
+</br>
+
+
+
+
+<div class="container">
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table table-shopping">
+        <thead class="">
+            <tr>
+            <th>
+                Fonction
+            </th>
+            <th class="text-right">
+                Ajouter
+            </th>
+            <th >
+                Supprimer
+            </th>
+            <th class="text-right">
+                Price
+            </th>
+            <th class="text-right">
+                Qty
+            </th>
+            <th class="text-right">
+                Amount
+            </th>
+        </tr></thead>
+        <tbody>
+        <% @functions.each do |function| %>
+            <tr>
+
+
+                <td class="td-name">
+
+                    <small><%= function.title %></small>
+                </td>
+                <td class="td-number">
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post do %>
+                  <%= submit_tag '+', class:"btn btn-info" %>
+                  <% end %>
+                </td>
+                <td class="td-name">
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
+                  <%= submit_tag '-', class:"btn btn-danger" %>
+                  <% end %>
+                </td>
+
+                <td class="td-number">
+                    1
+
+                </td>
+                <td class="td-number">
+                    <small>€</small><%= function.price %>
+                </td>
+
+            </tr>
+            <% @i = @i + 1 %>
+            <%end%>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
