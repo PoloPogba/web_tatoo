@@ -3,10 +3,28 @@
   <div class="row">
   <div class="col-md-6 px-0" >
     <div class="card card-fashion card-container ">
-      <h4 class="card-title">The view from south Texas in one Picture</h4>
+    
       <div class="card-body">
 
          <div class="container ">
+           Je voudrai aussi ajouter a mon site :
+
+
+                                  <%= form_tag new_user_registration_path(:number => 1), method: :get do %>
+                                  <%= submit_tag 'Un chatbot', class:"btn btn-info btn-round btn-lg" %>
+                                  <% end %>
+
+                                  <%= form_tag new_user_registration_path(:number => 2), method: :get do %>
+                                  <%= submit_tag 'Un Blog ', class:"btn btn-info btn-round btn-lg" %>
+                                  <% end %>
+
+                                  <%= form_tag new_user_registration_path(:number => 3), method: :get do %>
+                                  <%= submit_tag 'Un logo professionnel ', class:"btn btn-info btn-round btn-lg" %>
+                                  <% end %>
+
+                                  <%= form_tag new_user_registration_path(:number => 4), method: :get do %>
+                                  <%= submit_tag 'Une application mobile ', class:"btn btn-info btn-round btn-lg" %>
+                                  <% end %>
 
 
         </div>
@@ -22,26 +40,8 @@
 
 
 
-Je voudrai aussi ajouter a mon site :
 
-
-                       <%= form_tag new_user_registration_path(:number => 1), method: :get do %>
-                       <%= check_box 'Un chatbot', class:"form-check-label" %>
-                       <% end %>
-
-                       <%= form_tag new_user_registration_path(:number => 2), method: :get do %>
-                       <%= check_box 'Un Blog ', class:"form-check-label" %>
-                       <% end %>
-
-                       <%= form_tag new_user_registration_path(:number => 3), method: :get do %>
-                       <%= check_box 'Un logo professionnel ', class:"form-check-label" %>
-                       <% end %>
-
-                       <%= form_tag new_user_registration_path(:number => 4), method: :get do %>
-                       <%= check_box 'Une application mobile ', class:"form-check-label" %>
-                       <% end %>
-
-
+  <!-- Login Modal
 <div class="wrapper">
 
                       <button class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
@@ -49,7 +49,7 @@ Je voudrai aussi ajouter a mon site :
                       </button>
                   </div>
 
-  <!-- Login Modal -->
+
   <div class="modal fade modal-info show" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block;">
       <div class="modal-dialog modal-login">
           <div class="modal-content">
@@ -88,4 +88,4 @@ Je voudrai aussi ajouter a mon site :
               </div>
           </div>
       </div>
-  </div>
+  </div> -->

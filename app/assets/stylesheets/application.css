@@ -6779,11 +6779,11 @@ Created using IcoMoon - icomoon.io
 
 .page-header {
   min-height: 100vh;
-  max-height: 999px;
+  max-height: 10000px;
   padding: 0;
   color: #FFFFFF;
   position: relative;
-  overflow: hidden; }
+   overflow: scroll !important; }
   .page-header .page-header-image {
     position: absolute;
     background-size: cover;
