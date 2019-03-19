@@ -30,7 +30,15 @@ MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
 ---------------------------------------------------------------------------------</br>
 <%= @type.title %></br>
 ---------------------------------------------------------------------------------</br>
-
+<% @i = 1 %>
 <% @functions.each do |function| %>
-<%= function.title %></br>
+
+<%= function.title %> 
+<%= form_tag  formfuctions_path(:number => @i), method: :post do %>
+<%= submit_tag 'Ajouter', class:"btn btn-warning btn-round btn-sm" %>
+<% end %></br>
+<%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
+<%= submit_tag 'Supprimer', class:"btn btn-warning btn-round btn-sm" %>
+<% end %></br>
+<% @i = @i + 1 %>
 <%end%>

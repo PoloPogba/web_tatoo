@@ -6,9 +6,9 @@ class TypesController < ApplicationController
         @type_id = params[:type_id]
        
         @id_form = Form.find_by(guest_id: @find_guest.id)
-          
-        
         @id_form.type_id = @type_id
+        
+
         
 
         
