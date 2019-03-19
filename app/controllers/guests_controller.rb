@@ -22,6 +22,8 @@ class GuestsController < ApplicationController
         @form.guest_id = @last_guest_id +1
         @form.who_id = @number
         
+       
+        
          if @guest.save && @form.save
              redirect_to guest_path(@guest.id)
          else 

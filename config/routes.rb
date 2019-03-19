@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  devise_for :users, controllers: { :registrations => "registrations" } 
+     
+    
   resources :whos
   resources :guests, only: [:new, :create, :show] do 
-  resources :forms
+    resources :forms do 
+      resources :types
+    end
   end
+  resources :users
+  resources :functions
+  
 
 root 'guests#index'
 
