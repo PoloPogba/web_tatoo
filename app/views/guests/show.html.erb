@@ -7,18 +7,18 @@
 <div class="content-center">
   <div class="container">
            <div class="dropdown">
-             <button class="btn btn-primary btn-round dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <button class="btn btn-info btn-round dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Dropdown
              </button>
-             <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll">
+             <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 1), method: :post do %>
-               <%= submit_tag 'Restauration ', class:"btn btn-warning btn-round btn-lg" %>
+               <%= submit_tag 'Restauration ', class:"dropdown-item" %>
                <% end %>
                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 2), method: :post do %>
                <%= submit_tag 'Vêtements/Textile ', class:"dropdown-item" %>
                <% end %>
                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 3), method: :post do %>
-               <%= submit_tag 'Plomberie', class:"btn btn-warning btn-round btn-lg" %>
+               <%= submit_tag 'Plomberie', class:"dropdown-item" %>
                <% end %>
                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 4), method: :post do %>
                <%= submit_tag 'Electricité ', class:"dropdown-item" %>
