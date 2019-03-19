@@ -1,0 +1,44 @@
+                   <div class="page-header" >
+
+  <div class="row">
+  <div class="col-md-6 px-0" >
+    <div class="card card-fashion card-container ">
+      <h4 class="card-title">The view from south Texas in one Picture</h4>
+      <div class="card-body">
+         
+         <div class="container ">
+                       
+                      
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 px-0">
+    <%= image_tag "img1.jpg", :class=>"card card-fashion card-background" %>
+  </div>
+
+</div>
+</div>
+
+
+JE SUIS LUTILISATEUR NUMERO <%= current_user.id %>
+MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
+
+<%= @who.title %> </br>
+---------------------------------------------------------------------------------</br>
+<%= @activity.title %></br>
+---------------------------------------------------------------------------------</br>
+<%= @type.title %></br>
+---------------------------------------------------------------------------------</br>
+<% @i = 1 %>
+<% @functions.each do |function| %>
+
+<%= function.title %> 
+<%= form_tag  formfuctions_path(:number => @i), method: :post do %>
+<%= submit_tag 'Ajouter', class:"btn btn-warning btn-round btn-sm" %>
+<% end %></br>
+<%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
+<%= submit_tag 'Supprimer', class:"btn btn-warning btn-round btn-sm" %>
+<% end %></br>
+<% @i = @i + 1 %>
+<%end%>

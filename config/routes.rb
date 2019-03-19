@@ -10,8 +10,13 @@ Rails.application.routes.draw do
     end
   end
   resources :users
+<<<<<<< HEAD
   resources :functions
 
+=======
+  resources :formfuctions
+  
+>>>>>>> master
 
 root 'guests#index'
 

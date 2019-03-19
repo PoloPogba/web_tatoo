@@ -9,6 +9,9 @@ class RegistrationsController < Devise::RegistrationsController
             @form = Form.find_by(guest_id: @id_guest)
             @form.user_id = @id_user
             @form.save
+            @formfuction = Formfuction.new 
+            @formfuction.form_id = @form.id
+            @formfuction.save
            
          
         end
