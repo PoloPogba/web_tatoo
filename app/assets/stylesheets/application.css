@@ -10345,3 +10345,9 @@ color:black
   justify-content: center !important;
   align-items: center !important;
 }
+
+.img{
+  object-fit: cover;
+  height:100%;
+  width:100%
+}

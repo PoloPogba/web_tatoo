@@ -4,47 +4,67 @@
             <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
             <div class="content-center" >
 
-                <h3 class="title">Ryan Scheinder</h3>
-                <p class="category">Photographer</p>
+                <h3 class="title"><%= @user.first_name %> <%= @user.last_name %></h3>
+                <p class="category"><%= @user.email %></p>
                 <div class="content" style="display: flex;
       justify-content: center; align-items: center;">
-                    <div class="social-description">
-                        <h2>26</h2>
-                        <p>Comments</p>
-                    </div>
-                    <div class="social-description">
-                        <h2>26</h2>
-                        <p>Comments</p>
-                    </div>
-                    <div class="social-description">
-                        <h2>48</h2>
-                        <p>Bookmarks</p>
-                    </div>
+                    <%=link_to "Changer mes informations", edit_user_registration_path, :class=>"btn btn-info" %>
                 </div>
             </div>
         </div>
       </div>
 
-JE SUIS LUTILISATEUR NUMERO <%= current_user.id %>
-MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
+</br>
 
-<%= @who.title %> </br>
----------------------------------------------------------------------------------</br>
-<%= @activity.title %></br>
----------------------------------------------------------------------------------</br>
-<%= @type.title %></br>
----------------------------------------------------------------------------------</br>
+<div class="container">
+
+<div class="card">
+<div class="card-body">
+  <center>
+<h3>MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD</h3>
+<p>JE SUIS LUTILISATEUR NUMERO <%= current_user.id %></p>
+</center>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table ">
+
+          <tr>
+          <th><h4> Vous êtes : </h4>
+            </th>
+            <th><%= @who.title %>
+              </th>
+
+
+            </tr>
+
+
+            <tr>
+              <th><h4> Votre activité : </h4>
+                </th>
+              <th><%= @activity.title %>
+                </th>
+
+
+              </tr>
+              <tr>
+              <th><h4> Votre type de site : </h4>
+                </th>
+                <th><%= @type.title %>
+                  </th>
+
+
+                </tr>
 <% @i = 1 %>
-
-
-
-</br>
-</br>
-
-
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 <div class="container">
+
 <div class="card-body">
   <div class="table-responsive">
     <table class="table table-shopping">
@@ -102,6 +122,7 @@ MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD  </br>
             <%end%>
         </tbody>
     </table>
+</div>
 </div>
 </div>
 </div>
