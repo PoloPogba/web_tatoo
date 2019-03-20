@@ -56,13 +56,14 @@
 
 
                 </tr>
-<% @i = 1 %>
+
 </table>
 </div>
 </div>
 </div>
 </div>
 </div>
+<%@i = 1 %>
 
 
 <div class="container">
@@ -82,39 +83,61 @@
                 Supprimer
             </th>
             <th class="text-right">
-                Price
+                Quantité
             </th>
             <th class="text-right">
-                Qty
+                Prix
             </th>
-            <th class="text-right">
-                Amount
-            </th>
+            
         </tr></thead>
         <tbody>
         <% @functions.each do |function| %>
             <tr>
-
-
+        
                 <td class="td-name">
 
                     <small><%= function.title %></small>
                 </td>
+              
+         <% if find_function == nil %> 
                 <td class="td-number">
-                  <%= form_tag  formfuctions_path(:number => @i), method: :post do %>
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
                   <%= submit_tag '+', class:"btn btn-info" %>
                   <% end %>
+                 
                 </td>
                 <td class="td-name">
-                  <%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
+                
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '-', disabled: true, class:"btn btn-danger" %>
+                  <% end %>
+                </td>
+                <td class="td-number">
+                    0
+
+                </td>
+
+       <%else %>
+
+                 <td class="td-number">
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '+', disabled: true, class:"btn btn-info" %>
+                  <% end %>
+                 
+                </td>
+                <td class="td-name">
+                
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
                   <%= submit_tag '-', class:"btn btn-danger" %>
                   <% end %>
                 </td>
-
                 <td class="td-number">
                     1
 
                 </td>
+      <%end%>
+
+
                 <td class="td-number">
                     <small>€</small><%= function.price %>
                 </td>
@@ -136,9 +159,13 @@
 <%= image_tag "money.png", :style=>"height:50%; width:50%" %>
 
   </div>
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> master
   <div class="col-md-1 ml-auto mr-auto text-left">
-    <h3>TOTAL</h3><h4>100$</h4>
+    <h3>TOTAL</h3><h4><%= find_price %></h4>
       <div class="btn btn-round btn-info btn-large">Payer</div>
   </div>
 </div>
