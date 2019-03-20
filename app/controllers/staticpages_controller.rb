@@ -5,4 +5,6 @@ class StaticpagesController < ApplicationController
   end
   def portfolio
   end
+  def cbdrone
+  end
 end

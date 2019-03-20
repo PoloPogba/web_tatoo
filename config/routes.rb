@@ -20,5 +20,6 @@ get '/mentions-legales', to: 'staticpages#mentions'
 get '/conditions-générales-ventes', to: 'staticpages#conditions'
 get '/aboutus', to: 'staticpages#aboutus'
 get '/portfolio', to: 'staticpages#portfolio'
+get '/cbdrone', to: 'staticpages#cbdrone'
 
 end
