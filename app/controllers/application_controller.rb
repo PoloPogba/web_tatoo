@@ -8,13 +8,7 @@ class ApplicationController < ActionController::Base
     include FindingHelper
     include PriceHelper
 
-    def after_sign_up_path_for(resource_or_scope)
-        if resource_or_scope.is_a?(User)
-          user_path(1)    
-        else
-          super
-        end
-      end
+    
 
     
 end
