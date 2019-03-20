@@ -91,7 +91,7 @@
                 Amount
             </th>
         </tr></thead>
-        <tbody>
+        <tbody></tbody>
         <% @functions.each do |function| %>
             <tr>
 
@@ -101,12 +101,13 @@
                     <small><%= function.title %></small>
                 </td>
                 <td class="td-number">
-                  <%= form_tag  formfuctions_path(:number => @i), method: :post do %>
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
                   <%= submit_tag '+', class:"btn btn-info" %>
                   <% end %>
                 </td>
                 <td class="td-name">
-                  <%= form_tag  formfuction_path(:number => @i), method: "delete" do %>
+                
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
                   <%= submit_tag '-', class:"btn btn-danger" %>
                   <% end %>
                 </td>

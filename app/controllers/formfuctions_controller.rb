@@ -6,6 +6,7 @@ class FormfuctionsController < ApplicationController
         @activity = Activity.find(@form.activity_id)
         @type = Type.find(@form.type_id)
         @functions = Function.all
+        
     end
 
     def create 
@@ -16,6 +17,8 @@ class FormfuctionsController < ApplicationController
         @formfuction = Formfuction.new 
         @formfuction.form_id = @form.id
         @formfuction.function_id = @function_id
+
+        
 
         if @formfuction.save
             redirect_to formfuction_path(current_user.id)
@@ -33,9 +36,7 @@ class FormfuctionsController < ApplicationController
         @form = Form.find_by(user_id: current_user.id)
         @function_id = params[:number]
         @formfuction = Formfuction.find_by(function_id: @function_id, form_id: @form.id)
-        puts '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-        puts @formfuction
-        puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        
         
         if @formfuction.destroy
             redirect_to formfuction_path(current_user.id)
