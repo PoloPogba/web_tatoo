@@ -83,14 +83,12 @@
                 Supprimer
             </th>
             <th class="text-right">
-                Price
+                Quantité
             </th>
             <th class="text-right">
-                Qty
+                Prix
             </th>
-            <th class="text-right">
-                Amount
-            </th>
+            
         </tr></thead>
         <tbody>
         <% @functions.each do |function| %>
@@ -111,11 +109,11 @@
                 <td class="td-name">
                 
                   <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
-                  <%= submit_tag 'Non Ajouté', disabled: true, class:"btn btn-danger" %>
+                  <%= submit_tag '-', disabled: true, class:"btn btn-danger" %>
                   <% end %>
                 </td>
                 <td class="td-number">
-                    1
+                    0
 
                 </td>
 
@@ -123,7 +121,7 @@
 
                  <td class="td-number">
                   <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
-                  <%= submit_tag 'Deja ajouté', disabled: true, class:"btn btn-info" %>
+                  <%= submit_tag '+', disabled: true, class:"btn btn-info" %>
                   <% end %>
                  
                 </td>
@@ -134,7 +132,7 @@
                   <% end %>
                 </td>
                 <td class="td-number">
-                    0
+                    1
 
                 </td>
       <%end%>
@@ -161,9 +159,9 @@
 <%= image_tag "money.png", :style=>"height:50%; width:50%" %>
 
   </div>
-  
+   
   <div class="col-md-1 ml-auto mr-auto text-left">
-    <h3>TOTAL</h3><h4>100$</h4>
+    <h3>TOTAL</h3><h4><%= find_price %></h4>
       <div class="btn btn-round btn-info btn-large">Payer</div>
   </div>
 </div>

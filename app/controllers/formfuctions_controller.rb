@@ -10,7 +10,7 @@ class FormfuctionsController < ApplicationController
         @type = Type.find(@form.type_id)
         @functions = Function.all
         @function_id = params[:number]
-      
+        @formfuctions_user = Formfuction.where(form_id: @form.id)
 
         
     end
