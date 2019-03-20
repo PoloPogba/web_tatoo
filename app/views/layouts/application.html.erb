@@ -28,12 +28,13 @@
 
           </button>
         </div>
-        <div class="collapse navbar-collapse " data-nav-image="./assets/img/blurred-image-1.jpg" data-color="blue">
+        <div class="collapse navbar-collapse ">
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
               <div class="nav-link dropdown-toggle navbardropdownmenulink"  data-toggle="dropdown" >
-                <i class="now-ui-icons files_paper" aria-hidden="true"></i>
+
+                <%= image_tag "person.png", :style=>"height:35px"%>
                 <p>CONNECTE TOI TOUT DE SUITE</p>
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbardropdownmenulink">
@@ -44,7 +45,7 @@
 
 
         <%if user_signed_in? %>
-                       <%= link_to "VOIR MON DEVIS", formfuction_path(current_user.id), :class=>"dropdown-item" %>
+                       <%= link_to "Voir mon devis", formfuction_path(current_user.id), :class=>"dropdown-item" %>
                        <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
                        <%else %>
                        <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>
@@ -55,7 +56,7 @@
             </li>
             <li class="nav-item dropdown">
               <div  class="nav-link dropdown-toggle navbardropdownmenulink" data-toggle="dropdown">
-                <i class="now-ui-icons design_image" aria-hidden="true"></i>
+            <%= image_tag "home.png", :style=>"height:35px"%>
                 <p>NOTRE ENTREPRISE</p>
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbardropdownmenulink">
