@@ -1,0 +1,31 @@
+<div class="page-header page-header-small">
+
+            <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
+            <div class="content-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h1 class="title">A propos de nous</h1>
+                        <h4>Qui sommes nous et ourquoi nos choisir</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%= form_tag formfuction_charges_path(current_user.id) do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Amount: $5.00</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>

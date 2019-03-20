@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'sendgrid-ruby'
 gem 'dotenv-rails'
 
-
+gem 'stripe'
 ruby '2.5.1'
 gem 'table_print'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
