@@ -88,26 +88,26 @@
             <th class="text-right">
                 Prix
             </th>
-            
+
         </tr></thead>
         <tbody>
         <% @functions.each do |function| %>
             <tr>
-        
+
                 <td class="td-name">
 
                     <small><%= function.title %></small>
                 </td>
-              
-         <% if find_function == nil %> 
+
+         <% if find_function == nil %>
                 <td class="td-number">
                   <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
                   <%= submit_tag '+', class:"btn btn-info" %>
                   <% end %>
-                 
+
                 </td>
                 <td class="td-name">
-                
+
                   <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
                   <%= submit_tag '-', disabled: true, class:"btn btn-danger" %>
                   <% end %>
@@ -123,10 +123,10 @@
                   <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
                   <%= submit_tag '+', disabled: true, class:"btn btn-info" %>
                   <% end %>
-                 
+
                 </td>
                 <td class="td-name">
-                
+
                   <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
                   <%= submit_tag '-', class:"btn btn-danger" %>
                   <% end %>
@@ -159,11 +159,7 @@
 <%= image_tag "money.png", :style=>"height:50%; width:50%" %>
 
   </div>
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> master
   <div class="col-md-1 ml-auto mr-auto text-left">
     <h3>TOTAL</h3><h4><%= find_price %></h4>
       <div class="btn btn-round btn-info btn-large">Payer</div>
