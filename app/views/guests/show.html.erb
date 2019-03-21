@@ -6,11 +6,17 @@
 
 <div class="content-center">
   <div class="container">
+    <div class="container px-5">
+    <h3>Choisissez la catégorie de votre activité</h3>
+    <p>Pour mieux vous connaître et vous conseiller, merci de choisir le type de votre activité</p>
+    </div>
            <div class="dropdown">
+
              <button class="btn btn-info btn-round dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Dropdown
+                 Catégorie
              </button>
              <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
+
 
                               <% activity_show.each do |t| %>
                                 <% t.each do |i| %>
