@@ -31,7 +31,7 @@ module Admin
 
         def edit 
             @id_user = User.find(params[:id])
-            puts @id_user.last_name
+           
         end
 
     

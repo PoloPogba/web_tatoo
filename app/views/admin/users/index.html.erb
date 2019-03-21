@@ -11,6 +11,11 @@
 <td> Created at </td>
 <td> Updated at </td>
 <td> Role </td>
+<td> Sign_in_count </td>
+<td> Current_user_sign_in_at</td>
+<td> Last_sign_in_at</td>
+<td> Current_sign_in_ip</td>
+<td> Last_sign_in_ip</td>
 <td> Editer Utilisateur</td>
 
 </tr>
@@ -25,6 +30,11 @@
 <td> <%=user.created_at %></td>
 <td> <%=user.updated_at %></td>
 <td> <%=user.role %></td>
+<td> <%= user.sign_in_count%></td>
+<td> <%= user.current_sign_in_at%></td>
+<td> <%= user.last_sign_in_at %></td>
+<td> <%= user.current_sign_in_ip %></td>
+<td> <%= user.last_sign_in_ip%></td>
 <td> <%= link_to "Editer",  edit_admin_admins_user_path(user.id) %></td>
 
 </tr>
