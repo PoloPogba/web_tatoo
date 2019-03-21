@@ -10345,7 +10345,6 @@ color:black
 
 .row{
   display: flex !important;
-  justify-content: center !important;
   align-items: center !important;
 }
 
@@ -10353,4 +10352,8 @@ color:black
   object-fit: cover;
   height:100%;
   width:100%
+}
+
+.purple{
+   background-image: linear-gradient(to bottom right, #333399, #BFA5E8);
 }

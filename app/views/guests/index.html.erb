@@ -1,5 +1,5 @@
 <div class="page-header" style="max-height:10000em !important;">
-  <%= image_tag "cover.jpg", :class=>"page-header-image" %>
+  <%= image_tag "cover.png", :class=>"page-header-image" %>
   <div class="container mt-5" >
     <div class="row align-items-center p-5 mt-5">
       <div class="col-md-5 mx-auto" style="z-index:100;">
@@ -27,14 +27,18 @@
     </div>
   </div>
 </div>
+<div class="section purple">
+  <center><h2>Nos partenaires</h2></center>
+
+</div>
 <div class="cards">
   <div class="container">
     <div class="title">
-      <h3><small>Full Background Cards</small></h3>
+      <h3>Full Background Cards</h3>
     </div>
     <div class="row">
-      <div class="col-md-4" >
-        <%= image_tag "CBD.png", :class=>"card card-background", :id=>"img1"%>
+      <div class="col-md-4" id="card1" >
+        <center><%= image_tag "CBD.png", :class=>"card card-background w-75", :id=>"img1"%></center>
         <div class="card-body" >
           <div class="card-title text-left">
             <h3><%=link_to "CBDrone", cbdrone_path %></h3>
@@ -47,8 +51,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4" id="img2">
-        <%= image_tag "airbnb.png", :class=>"card card-background", :id=>"img2"%>
+      <div class="col-md-4" id="card2">
+        <center><%= image_tag "airbnb.png", :class=>"card card-background w-75", :id=>"img2"%></center>
         <div class="card-body" >
           <div class="card-title text-left">
             <h3>Airbnb.com</h3>
@@ -61,8 +65,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4" id="img3">
-        <%= image_tag "wix.png", :class=>"card card-background", :id=>"img3"%>
+      <div class="col-md-4" id="card3">
+        <center><%= image_tag "wix.png", :class=>"card card-background w-75", :id=>"img3"%></center>
         <div class="card-body" >
           <div class="card-title text-left">
             <h3>Wix</h3>
@@ -94,4 +98,17 @@
     $('#btnhome3').animate({ opacity: 0 }, 0);
     $('#btnhome3').animate({ opacity: 1, left: "0" }, 2500);
   });
+  $('#card1').mouseover(
+  function(){$('#img1').removeClass('w-75');});
+  $('#card1').mouseout(
+  function(){$('#img1').addClass('w-75');});
+  $('#card2').mouseover(
+  function(){$('#img2').removeClass('w-75');});
+  $('#card2').mouseout(
+  function(){$('#img2').addClass('w-75');})
+  $('#card3').mouseover(
+  function(){$('#img3').removeClass('w-75');});
+  $('#card3').mouseout(
+  function(){$('#img3').addClass('w-75');})
+
 </script>
