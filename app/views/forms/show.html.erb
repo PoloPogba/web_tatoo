@@ -11,6 +11,8 @@
                  Dropdown
              </button>
              <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
+
+
                        <%= form_tag  guest_form_types_path(:form_id => @id_form.id,:type_id => 1), method: :post do %>
                        <%= submit_tag 'Un Blog', class:"dropdown-item" %>
                        <% end %>

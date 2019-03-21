@@ -11,74 +11,16 @@
                  Dropdown
              </button>
              <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 1), method: :post do %>
-               <%= submit_tag 'Restauration ', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 2), method: :post do %>
-               <%= submit_tag 'Vêtements/Textile ', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 3), method: :post do %>
-               <%= submit_tag 'Plomberie', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 4), method: :post do %>
-               <%= submit_tag 'Electricité ', class:"dropdown-item" %>
-               <% end %>
 
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 5), method: :post do %>
-               <%= submit_tag 'Serrurerie ', class:"dropdown-item" %>
-               <% end %>
+                              <% activity_show.each do |t| %>
+                                <% t.each do |i| %>
+                                  <%= form_tag  guest_forms_path(:guest_id => @id_guest.id, :number => i[:id]), method: :post do %>
+                                  <%= submit_tag "#{i[:title]}", class:"dropdown-item" %>
+                                  <%end%>
+                                <%end%>
+                              <%end%>
 
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 7), method: :post do %>
-               <%= submit_tag 'Cordonnerie ', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 8), method: :post do %>
-               <%= submit_tag 'Start-up', class:"dropdown-item" %>
-               <% end %>
 
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 9), method: :post do %>
-               <%= submit_tag 'B2B', class:"dropdown-item" %>
-               <% end %>
-
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 10), method: :post do %>
-               <%= submit_tag 'Musique ', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 11), method: :post do %>
-               <%= submit_tag 'Design ', class:"dropdown-item" %>
-               <% end %>
-
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 12), method: :post do %>
-               <%= submit_tag 'Beauté', class:"dropdown-item" %>
-               <% end %>
-
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 13), method: :post do %>
-               <%= submit_tag 'Bien-être ', class:"dropdown-item" %>
-               <% end %>
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 14), method: :post do %>
-               <%= submit_tag 'Evènementiel ', class:"dropdown-item" %>
-               <% end %>
-
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 15), method: :post do %>
-               <%= submit_tag 'Hôtelerie', class:"dropdown-item" %>
-               <% end %>
-
-               <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 16), method: :post do %>
-               <%= submit_tag 'Sportive', class:"dropdown-item" %>
-               <% end %>
-                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 17), method: :post do %>
-               <%= submit_tag 'Culture/Loisirs ', class:"dropdown-item" %>
-               <% end %>
-                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 18), method: :post do %>
-               <%= submit_tag 'Action Social/Santé/Humanitaire ', class:"dropdown-item" %>
-               <% end %>
-                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 19), method: :post do %>
-               <%= submit_tag 'Défense des droits', class:"dropdown-item" %>
-               <% end %>
-                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 20), method: :post do %>
-               <%= submit_tag 'Education/Formation/Insertion ', class:"dropdown-item" %>
-               <% end %>
-                <%= form_tag  guest_forms_path(:guest_id => @id_guest.id,:number => 22), method: :post do %>
-               <%= submit_tag 'Autres', class:"dropdown-item" %>
-               <% end %>
 </div>
              </div>
           </div>
