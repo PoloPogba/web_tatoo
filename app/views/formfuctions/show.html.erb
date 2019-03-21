@@ -93,23 +93,20 @@
         <tbody>
         <% @functions.each do |function| %>
             <tr>
-
                 <td class="td-name">
-
                     <small><%= function.title %></small>
                 </td>
-
-         <% if find_function == nil %>
+                <% if find_function == nil %>
                 <td class="td-number">
                   <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
-                  <%= submit_tag '+', class:"btn btn-info" %>
+                  <%= submit_tag '+', class:"superAjax btn btn-info" %>
                   <% end %>
 
                 </td>
                 <td class="td-name">
 
                   <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
-                  <%= submit_tag '-', disabled: true, class:"btn btn-danger" %>
+                  <%= submit_tag '-', disabled: true, class:"superAjax btn btn-danger" %>
                   <% end %>
                 </td>
                 <td class="td-number">
@@ -169,3 +166,15 @@
 </table>
 </div>
 </div>
+
+
+<script>
+
+$(document).on('click','.superAjax',function(){
+alert('U clicked on table');
+});
+
+//put code here
+
+
+</script>
