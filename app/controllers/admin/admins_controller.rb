@@ -4,6 +4,8 @@ module Admin
 class AdminsController < ApplicationController
 
     def index 
+        @users = User.all
+        @formfuctions = Formfuction.all
 
     end 
 

@@ -17,7 +17,10 @@ Rails.application.routes.draw do
   resources :users
 
  scope "superadmin", module: "admin", as: 'admin_admins' do 
-  resources :admins
+  resources :admins  
+  resources :users
+  resources :formfuctions
+  
 end
 
 
