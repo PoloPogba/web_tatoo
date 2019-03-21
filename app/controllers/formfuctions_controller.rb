@@ -27,7 +27,11 @@ class FormfuctionsController < ApplicationController
         
 
         if @formfuction.save
-            redirect_to formfuction_path(current_user.id)
+            respond_to do |format|
+                format.html { redirect_to formfuction_path(current_user.id) }
+                format.js
+              end
+            
         end
 
 
