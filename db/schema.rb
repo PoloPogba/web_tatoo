@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_03_20_194808) do
   end
 
   create_table "charges", force: :cascade do |t|
-    t.integer "stripe_customer_id"
+    t.string "stripe_customer_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
