@@ -3605,7 +3605,8 @@ color:black !important}
 h3, .h3 {
   font-size: 1.825em;
   margin-bottom: 30px;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+}
 
 h4, .h4 {
   font-size: 1.5em;
@@ -3621,14 +3622,16 @@ color:black !important}
 h5, .h5 {
   font-size: 1.3em;
   line-height: 1.4em;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+color: #3a3b4c !important}
   h5.category, .h5.category {
     font-weight: 400; }
 
 h6, .h6 {
   font-size: 0.9em;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+color:white !important }
 
 p {
   line-height: 1.61em;
