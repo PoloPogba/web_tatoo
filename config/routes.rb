@@ -3,17 +3,22 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { :registrations => "registrations" }
 
 
-  resources :whos
+  
   resources :guests, only: [:new, :create, :show] do
     resources :forms do
       resources :types
     end
   end
-  resources :users
-  
+
   resources :formfuctions do 
     resources :charges
   end
+
+  resources :users
+
+ scope "superadmin", module: "admin", as: 'admin_admins' do 
+  resources :admins
+end
 
 
 root 'guests#index'
