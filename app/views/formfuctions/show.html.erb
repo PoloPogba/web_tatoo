@@ -1,13 +1,13 @@
 <div class="wrapper">
-<div class="page-header page-header-small" >
+<div class="page-header page-header-small section-image" >
 
             <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
             <div class="content-center" >
 <div class="photo-container">
-  <%= image_tag "user.png", :style=>"padding-left:5%; height:30%; width:30%" %>
+  <%= image_tag "user.png", :style=>"padding-left:5%; height:30%; width:30%; padding-top:10px; padding-bottom:0px" %>
   </div>
-                <h3 class="title"><%= @user.first_name %> <%= @user.last_name %></h3>
-                <p class="category"><%= @user.email %></p>
+                <h1 class="title" style="padding-top:0px;"><%= @user.first_name %> <%= @user.last_name %></h1>
+                <h6 class="category"><%= @user.email %></h6>
                 <div class="content" style="display: flex;
       justify-content: center; align-items: center;">
                     <%=link_to "Changer mes informations", edit_user_registration_path, :class=>"btn btn-info" %>

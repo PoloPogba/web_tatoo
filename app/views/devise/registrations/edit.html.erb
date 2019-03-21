@@ -9,13 +9,13 @@
           <p> Changez vos informations </p>
 <div class="container">
 <h3>Effacer le compte</h3>
-            <h6>
+            <h5>
 
 
               <p>Vous n'avez pas trouvé votre bonheur ici? <%= button_to "Effacer le compte", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, :class=>"btn btn-danger" %></p>
 
-              <%= link_to "Back", :back %>
-            </h6>
+              <%= link_to "Retour", :back, :style=>"color:blue" %>
+            </h5>
 </div>
 </div>
       <div class="col-md-5 mx-auto">

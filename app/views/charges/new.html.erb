@@ -1,16 +1,26 @@
-<div class="page-header page-header-small">
+<div class="page-header page-header-small section-image">
 
             <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
             <div class="content-center">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h1 class="title">A propos de nous</h1>
-                        <h4>Qui sommes nous et ourquoi nos choisir</h4>
+                        <h1 class="title">Paiement</h1>
+                        <h6>Paiement sécurisé à travers Stripe</h6>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <div class="content">
 
+            <div class="container">
+              <h5><%= link_to "Retour", :back, :style=>"color:blue" %></h5>
+              <div class="col-md-3 ml-auto mr-auto">
+  <div class="card card-body">
+    <center>
+    <h3>Merci de payer</h3>
+    <p>Les paiements se font à travers Stripe, un système de paiements en ligne sécurisé</p>
 <%= form_tag formfuction_charges_path(current_user.id) do %>
   <article>
     <% if flash[:error].present? %>
@@ -19,13 +29,18 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $<%= @amount %></span>
+      <span>Montant: $<%= find_price %></span>
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount=@amount*100
+          data-description="Votre site"
+          data-amount=<% find_price %> *100
           data-locale="auto"></script>
 <% end %>
+</center>
+</div>
+</div>
+</div>
+</div>
