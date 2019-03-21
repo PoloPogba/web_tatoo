@@ -48,4 +48,9 @@ module FormsHelper
       return association
     end
   end
+
+  def blog
+  
+
+  end
 end

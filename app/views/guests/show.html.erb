@@ -12,15 +12,12 @@
              </button>
              <div class="dropdown-menu content-center dropdown-overflow" aria-labelledby="navbarDropdownMenuLink" x-placement="bottom-start" style="position: absolute; transform: translate3d(1px, 48px, 0px); top: 0px; left: 0px; will-change: transform; overflow:scroll; height:15em">
 
-
-
-
                               <% activity_show.each do |t| %>
-                              <% t.each do |i| %>
-                              <%= form_tag  guest_forms_path(:guest_id => @id_guest.id, :number => i[:id]), method: :post do %>
-                              <%= submit_tag "#{i[:title]}", class:"dropdown-item" %>
-                              <%end%>
-                              <%end%>
+                                <% t.each do |i| %>
+                                  <%= form_tag  guest_forms_path(:guest_id => @id_guest.id, :number => i[:id]), method: :post do %>
+                                  <%= submit_tag "#{i[:title]}", class:"dropdown-item" %>
+                                  <%end%>
+                                <%end%>
                               <%end%>
 
 
