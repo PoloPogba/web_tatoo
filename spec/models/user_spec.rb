@@ -42,8 +42,8 @@ end
     end
 
 
-    describe "at sign in #email" do
-      it "should not be valid without at sign" do
+    describe "#email" do
+      it "should at sign" do
        bad_user = User.create(email: "martinclopeyopmail.com")
      expect(bad_user).not_to be_valid
      expect(bad_user.errors.include?(to_s)).to eq(false)

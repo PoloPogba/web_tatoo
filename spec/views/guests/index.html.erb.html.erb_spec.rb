@@ -13,4 +13,15 @@ context 'proposal of website' do
     expect(rendered).to have_content 'un site pour'
   end
   end
+
+
+
+
+context 'partnership' do
+  it "displays 'nos partenaires'" do
+    render
+    expect(rendered).to have_content 'Nos partenaires'
   end
+end
+
+end
