@@ -19,7 +19,11 @@
     <nav class="navbar navbar-expand-lg bg-info fixed-top navbar-transparent" color-on-scroll="500">
       <div class="container">
         <div class="navbar-translate">
-                  <%= image_tag "logolesitefrancais.png", :class=>"navbar-brand", :rel=>"tooltip", :title=>"Designed by Yannick. Coded by Creative Mister AYS"%>
+                   <div class="navbar-brand logo_h">
+                    <%= link_to  root_path do %>
+                    <%= image_tag("logolesitefrancais.png") %>
+                    <% end %>
+                    </div>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar bar1"></span>
