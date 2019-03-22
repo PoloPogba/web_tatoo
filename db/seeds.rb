@@ -146,11 +146,6 @@ type = Type.create!([
 
   },
   {
-    title: "Pour le Fun",
-
-
-  },
-  {
     title: "Vitrine",
 
 
