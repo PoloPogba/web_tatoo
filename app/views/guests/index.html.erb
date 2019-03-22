@@ -45,10 +45,7 @@
 
   </div>
 </div>
-<div class="section purple">
-  <center><h2>Nos partenaires</h2></center>
 
-</div>
 <div class="cards">
   <div class="container">
     <div class="title">
@@ -102,6 +99,71 @@
       <%=link_to "Voir plus", portfolio_path, :class=>"btn btn-info" %>
     </center>
   </div>
+</div>
+
+<div class="section purple">
+  <center><h2>Ils nous font confiance</h2>
+    <div class="row px-5">
+        <div class="col-md-2">
+<%= image_tag "logo1.png"%>
+</div>
+<div class="col-md-2">
+<%= image_tag "logo2.png"%>
+</div>
+<div class="col-md-2">
+<%= image_tag "logo3.png"%>
+</div>
+<div class="col-md-2">
+<%= image_tag "logo4.png"%>
+</div>
+<div class="col-md-2">
+<%= image_tag "logo5.png"%>
+</div>
+<div class="col-md-2">
+<%= image_tag "logo6.png"%>
+</div>
+</center>
+</div>
+<div class="features-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="title">Des valurs en béton</h2>
+                <div class="info info-horizontal">
+
+                  <%= image_tag "puzzle.png", :style=>"object-fit:cover", :class=>"icon icon-info icon-circle"%>
+
+
+                    <div class="description">
+                        <h4 class="info-title">La transparence</h4>
+                        <p>On vous indique le prix, détaillé à la précision dev. Ne soyez plus dans le flou, on vous explique chaque détail, son prix et sa nécéssité. Vous ne verez plus un devis à chiffres astronomiques sans explications pour un site simple.</p>
+                    </div>
+                </div>
+                <div class="info info-horizontal">
+                    <%= image_tag "coin.png", :style=>"object-fit:cover", :class=>"icon icon-info icon-circle"%>
+                    <div class="description">
+                        <h4 class="info-title">Les prix honêtes</h4>
+                        <p>En tant que professionels, notre objectif est d'avant tout rendre l'univers de l'infomatique accessible. Notre solution est simplement de baisser les prix pour que tout consomateur puisse profiter de ces technologies.</p>
+                    </div>
+                </div>
+                <div class="info info-horizontal">
+                    <%= image_tag "time.png", :style=>"object-fit:cover", :class=>"icon icon-info icon-circle"%>
+                    <div class="description">
+                        <h4 class="info-title">La rapidité et la qualité</h4>
+                        <p>Nous guarantissons l'impossible : un site fait en moins de deux semaines. Notre priorité est le client et nous travaillons dans l'éfficacité totale pour produire des sites de qualité supérieure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="tablet-container">
+                    <%= image_tag "bolts.png" %>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <script>
