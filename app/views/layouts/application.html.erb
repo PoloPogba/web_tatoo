@@ -35,13 +35,9 @@
         <div class="collapse navbar-collapse ">
 
 
-          <%= link_to "Home", root_path %>
+          
 
-          <%if user_signed_in? && current_user.role === "admin" %>
-
-          <%= link_to "Espace Administrateur", admin_admins_admins_path %>
-
-          <%end%>
+          
 
 
           <ul class="navbar-nav ml-auto">
@@ -60,7 +56,10 @@
 
 
         <%if user_signed_in? %>
-                       
+                        <%if current_user.role === "admin" %>
+                        <%= link_to "Espace Administrateur", admin_admins_admins_path, :class=>"dropdown-item"  %>
+                        <%end%>
+                       <%=link_to "Mes Informations", edit_user_registration_path, :class=>"dropdown-item" %>
                        <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
                        <%else %>
                        <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>
