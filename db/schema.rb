@@ -10,17 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_104634) do
+ActiveRecord::Schema.define(version: 2019_03_21_190659) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "activities", force: :cascade do |t|
     t.string "title"
-    t.bigint "who_id"
+    t.integer "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["who_id"], name: "index_activities_on_who_id"
+  end
+
+  create_table "charges", force: :cascade do |t|
+    t.string "stripe_customer_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_charges_on_user_id"
   end
 
   create_table "formfuctions", force: :cascade do |t|
@@ -50,10 +57,8 @@ ActiveRecord::Schema.define(version: 2019_03_18_104634) do
   create_table "functions", force: :cascade do |t|
     t.string "title"
     t.decimal "price"
-    t.bigint "type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["type_id"], name: "index_functions_on_type_id"
   end
 
   create_table "guests", force: :cascade do |t|
@@ -63,10 +68,8 @@ ActiveRecord::Schema.define(version: 2019_03_18_104634) do
 
   create_table "types", force: :cascade do |t|
     t.string "title"
-    t.bigint "activity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["activity_id"], name: "index_types_on_activity_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -80,11 +83,18 @@ ActiveRecord::Schema.define(version: 2019_03_18_104634) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "role"
+    t.integer "sign_in_count", default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "whos", force: :cascade do |t|
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

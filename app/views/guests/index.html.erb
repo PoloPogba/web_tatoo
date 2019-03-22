@@ -1,149 +1,114 @@
-<div class="page-header">
-  <%= image_tag "cover.jpg", :class=>"page-header-image" %>
-
-
-      <div class="row align-items-center">
-
-
-        <div class="col-md-5 mx-auto" style="z-index:100">
-<div class="align-items-center">
+<div class="page-header" style="max-height:10000em !important;">
+  <%= image_tag "cover.png", :class=>"page-header-image" %>
+  <div class="container mt-5" >
+    <div class="row align-items-center p-5 mt-5">
+      <div class="col-md-5 mx-auto" style="z-index:100;">
+        <div class="align-items-center">
           <h1 class="title">Nous réalisons le site internet qui vous sera utile.</h1>
           <h4 class="description">Lesitefrancais vous propose de bons programmeurs et designer, et suit de près la réalisation de votre site internet jusqu'à la fin.</h4>
-
-        </div>
-        </div>
-        <div class="col-md-5 mx-auto" >
-          <div class="container">
-
-        <h2 style="margin:0em">J'ai besoin d'un site pour:</h2>
-
-
-
-
-
-                     <%= form_tag guests_path(:number => 1), method: :post do %>
-                       <%= submit_tag 'Moi Même', class:"btn btn-info btn-round btn-lg" %>
-                       <% end %>
-
-                       <%= form_tag guests_path(:number => 2), method: :post do %>
-                       <%= submit_tag 'Mon Entreprise ', class:"btn btn-info btn-round btn-lg" %>
-                       <% end %>
-
-                       <%= form_tag guests_path(:number => 3), method: :post do %>
-                       <%= submit_tag 'Mon Association ', class:"btn btn-info btn-round btn-lg" %>
-                       <% end %>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
         </div>
       </div>
+      <div class="col-md-5 mx-auto"  >
+        <div class="container">
+          <h2 style="margin:0em">J'ai besoin d'un site pour:</h2>
+          <%= form_tag guests_path(:number => 1), method: :post do %>
+          <%= submit_tag 'Moi Même', :class=>"btn btn-info btn-round btn-lg", :id=>"btnhome1", :style=>"position: relative;  left: 110%; overflow: hidden; display: none;" %>
+          <% end %>
 
+          <%= form_tag guests_path(:number => 2), method: :post do %>
+          <%= submit_tag 'Mon Entreprise ', :class=>"btn btn-info btn-round btn-lg ", :id=>"btnhome2", :style=>"position: relative;  left: 110%; overflow: hidden; display: none;" %>
+          <% end %>
+
+          <%= form_tag guests_path(:number => 3), method: :post do %>
+          <%= submit_tag 'Mon Association ', :class=>"btn btn-info btn-round btn-lg ", :id=>"btnhome3", :style=>"position: relative;  left: 110%; overflow: hidden; display: none;" %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+<div class="section purple">
+  <center><h2>Nos partenaires</h2></center>
 
-
+</div>
 <div class="cards">
-                    <div class="container">
-                        <div class="title">
-                          <h3>
-                                <small>Full Background Cards</small>
-                            </h3>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4" >
-                              <%= image_tag "cover.jpg", :class=>"card card-background", :id=>"img1"%>
+  <div class="container">
+    <div class="title">
+      <h3>Full Background Cards</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-4" id="card1" >
+        <center><%= image_tag "CBD.png", :class=>"card card-background w-75", :id=>"img1"%></center>
+        <div class="card-body" >
+          <div class="card-title text-left">
+            <h3><%=link_to "CBDrone", cbdrone_path %></h3>
+          </div>
+          <div class="card-footer text-left">
+            <div class="stats-link pull-right">
+              <a href="CBDrone.herokuapp.com" class="footer-link">CBDrone.herokuapp.com</a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="card2">
+        <center><%= image_tag "airbnb.png", :class=>"card card-background w-75", :id=>"img2"%></center>
+        <div class="card-body" >
+          <div class="card-title text-left">
+            <h3>Airbnb.com</h3>
+          </div>
+          <div class="card-footer text-left">
+            <div class="stats-link pull-right">
+              <a href="airbnb.com" class="footer-link">airbnb.com</a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="card3">
+        <center><%= image_tag "wix.png", :class=>"card card-background w-75", :id=>"img3"%></center>
+        <div class="card-body" >
+          <div class="card-title text-left">
+            <h3>Wix</h3>
+          </div>
+          <div class="card-footer text-left">
+            <div class="stats-link pull-right">
+              <a href="wix.com" class="footer-link">wix.com</a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center>
+      <%=link_to "Voir plus", portfolio_path, :class=>"btn btn-info" %>
+    </center>
+  </div>
+</div>
 
-                                    <div class="card-body" >
-                                        <div class="card-title text-left">
-                                            <h3>How wild Animals live in the National Forest</h3>
-                                        </div>
-                                        <div class="card-footer text-left">
-                                            <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
-                                                </span>
-                                                <span>
-                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
-                                                </span>
-                                            </div>
-                                            <div class="stats-link pull-right">
-                                                <a href="#pablo" class="footer-link">Environment</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+<script>
+  $(document).ready(function() {
+    $('#btnhome1').css('display', 'block');
+    $('#btnhome1').animate({ opacity: 0 }, 0);
+    $('#btnhome1').animate({ opacity: 1, left: "0" }, 2000);
+    $('#btnhome2').css('display', 'block');
+    $('#btnhome2').animate({ opacity: 0 }, 0);
+    $('#btnhome2').animate({ opacity: 1, left: "0" }, 2250);
+    $('#btnhome3').css('display', 'block');
+    $('#btnhome3').animate({ opacity: 0 }, 0);
+    $('#btnhome3').animate({ opacity: 1, left: "0" }, 2500);
+  });
+  $('#card1').mouseover(
+  function(){$('#img1').removeClass('w-75');});
+  $('#card1').mouseout(
+  function(){$('#img1').addClass('w-75');});
+  $('#card2').mouseover(
+  function(){$('#img2').removeClass('w-75');});
+  $('#card2').mouseout(
+  function(){$('#img2').addClass('w-75');})
+  $('#card3').mouseover(
+  function(){$('#img3').removeClass('w-75');});
+  $('#card3').mouseout(
+  function(){$('#img3').addClass('w-75');})
 
-                            <div class="col-md-4" id="img2">
-                                <%= image_tag "cover.jpg", :class=>"card card-background" %>
-                                    <div class="card-body">
-                                        <div class="card-title text-left">
-                                            <h3>How wild Animals live in the National Forest</h3>
-                                        </div>
-                                        <div class="card-footer text-left">
-                                            <div class="stats-link">
-                                                <a href="#pablo" class="footer-link">Environment</a>
-                                            </div>
-                                            <div class="stats stats-right">
-                                                <span>
-                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
-                                                </span>
-                                                <span>
-                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            <div class="col-md-4" id="img3">
-                                <%= image_tag "cover.jpg", :class=>"card card-background" %>
-                                    <div class="card-body">
-                                        <div class="card-title text-left">
-                                            <h3>How wild Animals live in the National Forest</h3>
-                                        </div>
-                                        <div class="card-footer text-left">
-                                            <div class="stats">
-                                                <span>
-                                                    <i class="now-ui-icons media-2_sound-wave"></i>SPACE.com
-                                                </span>
-                                                <span>
-                                                    <i class="now-ui-icons tech_watch-time"></i> 20min ago
-                                                </span>
-                                            </div>
-                                            <div class="stats-link pull-right">
-                                                <a href="#pablo" class="footer-link">Environment</a>
-                                            </div>
-                                        </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <center>
-                        <button class="btn btn-info">Voir plus </button>
-                        </center>
-                    </div>
-                </div>
-
-
-
-
-<script type="text/javascript">
-    var button = function() {
-    $number = 3;
-    };
-    var where = document.getElementsByClassName("btn btn-warning btn-round btn-lg")
-    where[3].addEventListener("click", button);
 </script>
- </body>
-</html>

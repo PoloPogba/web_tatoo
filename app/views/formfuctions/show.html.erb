@@ -1,0 +1,180 @@
+<div class="wrapper">
+<div class="page-header page-header-small section-image" >
+
+            <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
+            <div class="content-center" >
+<div class="photo-container">
+  <%= image_tag "user.png", :style=>"padding-left:5%; height:30%; width:30%; padding-top:10px; padding-bottom:0px" %>
+  </div>
+                <h1 class="title" style="padding-top:0px;"><%= @user.first_name %> <%= @user.last_name %></h1>
+                <h6 class="category"><%= @user.email %></h6>
+                <div class="content" style="display: flex;
+      justify-content: center; align-items: center;">
+                    <%=link_to "Changer mes informations", edit_user_registration_path, :class=>"btn btn-info" %>
+                </div>
+            </div>
+        </div>
+      </div>
+
+</br>
+
+<div class="container">
+
+<div class="card">
+<div class="card-body">
+  <center>
+<h3>MON DEVIS NATTEND PLUS QUUN PAIEMENT EN CARTE GOLD</h3>
+<p>JE SUIS LUTILISATEUR NUMERO <%= current_user.id %></p>
+</center>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table ">
+
+          <tr>
+          <th><h4> Vous êtes : </h4>
+            </th>
+            <th><%= @who.title %>
+              </th>
+
+
+            </tr>
+
+
+            <tr>
+              <th><h4> Votre activité : </h4>
+                </th>
+              <th><%= @activity.title %>
+                </th>
+
+
+              </tr>
+              <tr>
+              <th><h4> Votre type de site : </h4>
+                </th>
+                <th><%= @type.title %>
+                  </th>
+
+
+                </tr>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<%@i = 1 %>
+
+
+<div class="container">
+
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table table-shopping">
+        <thead class="">
+            <tr>
+            <th>
+                Fonction
+            </th>
+            <th class="text-right">
+                Ajouter
+            </th>
+            <th >
+                Supprimer
+            </th>
+            <th class="text-right">
+                Quantité
+            </th>
+            <th class="text-right">
+                Prix
+            </th>
+
+        </tr></thead>
+        <tbody>
+        <% @functions.each do |function| %>
+            <tr>
+                <td class="td-name">
+                    <small><%= function.title %></small>
+                </td>
+                <% if find_function == nil %>
+                <td class="td-number">
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '+', class:"superAjax btn btn-info" %>
+                  <% end %>
+
+                </td>
+                <td class="td-name">
+
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '-', disabled: true, class:"superAjax btn btn-danger" %>
+                  <% end %>
+                </td>
+                <td class="td-number">
+                    0
+
+                </td>
+
+       <%else %>
+
+                 <td class="td-number">
+                  <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '+', disabled: true, class:"btn btn-info" %>
+                  <% end %>
+
+                </td>
+                <td class="td-name">
+
+                  <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
+                  <%= submit_tag '-', class:"btn btn-danger" %>
+                  <% end %>
+                </td>
+                <td class="td-number">
+                    1
+
+                </td>
+      <%end%>
+
+
+                <td class="td-number">
+                    <small>€</small><%= function.price %>
+                </td>
+
+            </tr>
+            <% @i = @i + 1 %>
+            <%end%>
+        </tbody>
+
+    </table>
+
+</div>
+<table>
+<div class="container">
+  <div class="row">
+
+<div class="col-md-8 ml-auto mr-auto">
+
+<%= image_tag "money.png", :style=>"height:50%; width:50%" %>
+
+  </div>
+
+  <div class="col-md-1 ml-auto mr-auto text-left">
+    <h3>TOTAL</h3><h4><%= find_price %></h4>
+      <%= link_to "Payer maintenant",  new_formfuction_charge_path(current_user.id), class:"btn btn-round btn-info btn-large" %>
+  </div>
+</div>
+</div>
+</table>
+</div>
+</div>
+
+
+<script>
+
+$(document).on('click','.superAjax',function(){
+alert('U clicked on table');
+});
+
+//put code here
+
+
+</script>

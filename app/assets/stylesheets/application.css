@@ -3605,7 +3605,8 @@ color:black !important}
 h3, .h3 {
   font-size: 1.825em;
   margin-bottom: 30px;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+}
 
 h4, .h4 {
   font-size: 1.5em;
@@ -3621,14 +3622,16 @@ color:black !important}
 h5, .h5 {
   font-size: 1.3em;
   line-height: 1.4em;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+color: #3a3b4c !important}
   h5.category, .h5.category {
     font-weight: 400; }
 
 h6, .h6 {
   font-size: 0.9em;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+color:white !important }
 
 p {
   line-height: 1.61em;
@@ -3982,7 +3985,7 @@ color:black}
   .navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
     width: 17px; }
   .navbar.navbar-transparent {
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
     -webkit-box-shadow: none;
             box-shadow: none;
     color: #FFFFFF;
@@ -4858,11 +4861,11 @@ Created using IcoMoon - icomoon.io
   font-size: 1.5em; }
 
 .table-shopping .td-name {
-  min-width: 200px; }
+  min-width: 50px; }
 
 .table-shopping .td-number {
   text-align: right;
-  min-width: 145px; }
+  min-width: 50px; }
   .table-shopping .td-number small {
     margin-right: 3px; }
 
@@ -6779,11 +6782,11 @@ Created using IcoMoon - icomoon.io
 
 .page-header {
   min-height: 100vh;
-  max-height: 999px;
+  max-height: 10000px;
   padding: 0;
   color: #FFFFFF;
   position: relative;
-  overflow: hidden; }
+   overflow: scroll !important; }
   .page-header .page-header-image {
     position: absolute;
     background-size: cover;
@@ -10338,4 +10341,19 @@ color:black
 
 .navbardropdownmenulink {
 color:black
+}
+
+.row{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.img{
+  object-fit: cover;
+  height:100%;
+  width:100%
+}
+
+.purple{
+   background-image: linear-gradient(to bottom right, #333399, #BFA5E8);
 }

@@ -28,23 +28,35 @@
 
           </button>
         </div>
-        <div class="collapse navbar-collapse " data-nav-image="./assets/img/blurred-image-1.jpg" data-color="blue">
+        <div class="collapse navbar-collapse ">
+          
+          
+          <%= link_to "Home", root_path %>
+          
+          <%if user_signed_in? && current_user.role === "admin" %>
+         
+          <%= link_to "Espace Administrateur", admin_admins_admins_path %>
+         
+          <%end%>
+          
+          
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
               <div class="nav-link dropdown-toggle navbardropdownmenulink"  data-toggle="dropdown" >
-                <i class="now-ui-icons files_paper" aria-hidden="true"></i>
+
+                <%= image_tag "person.png", :style=>"height:35px"%>
                 <p>CONNECTE TOI TOUT DE SUITE</p>
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbardropdownmenulink">
 
-                  
 
-                       
 
-                       
+
+
+
         <%if user_signed_in? %>
-                       <%= link_to "VOIR MON DEVIS", function_path(current_user.id), :class=>"dropdown-item" %>
+                       <%= link_to "Voir mon devis", formfuction_path(current_user.id), :class=>"dropdown-item" %>
                        <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
                        <%else %>
                        <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>
@@ -54,44 +66,15 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <div href="#" class="nav-link dropdown-toggle navbardropdownmenulink" data-toggle="dropdown">
-                <i class="now-ui-icons design_image" aria-hidden="true"></i>
-                <p>Examples</p>
+              <div  class="nav-link dropdown-toggle navbardropdownmenulink" data-toggle="dropdown">
+            <%= image_tag "home.png", :style=>"height:35px"%>
+                <p>NOTRE ENTREPRISE</p>
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbardropdownmenulink">
-                <a class="dropdown-item" href="./examples/about-us.html">
-                              <i class="now-ui-icons business_bulb-63"></i> About-us
-                </a>
-                <a class="dropdown-item" href="./examples/blog-post.html">
-                              <i class="now-ui-icons text_align-left"></i> Blog Post
-                </a>
-                <a class="dropdown-item" href="./examples/blog-posts.html">
-                              <i class="now-ui-icons design_bullet-list-67"></i> Blog Posts
-                </a>
-                <a class="dropdown-item" href="./examples/contact-us.html">
-                              <i class="now-ui-icons location_pin"></i> Contact Us
-                </a>
-                <a class="dropdown-item" href="./examples/landing-page.html">
-                              <i class="now-ui-icons education_paper"></i> Landing Page
-                </a>
-                <a class="dropdown-item" href="./examples/login-page.html">
-                              <i class="now-ui-icons users_circle-08"></i> Login Page
-                </a>
-                <a class="dropdown-item" href="./examples/pricing.html">
-                              <i class="now-ui-icons business_money-coins"></i> Pricing
-                </a>
-                <a class="dropdown-item" href="./examples/ecommerce.html">
-                              <i class="now-ui-icons shopping_shop"></i> Ecommerce Page
-                </a>
-                <a class="dropdown-item" href="./examples/product-page.html">
-                              <i class="now-ui-icons shopping_bag-16"></i> Product Page
-                </a>
-                <a class="dropdown-item" href="./examples/profile-page.html">
-                              <i class="now-ui-icons users_single-02"></i> Profile Page
-                </a>
-                <a class="dropdown-item" href="./examples/signup-page.html">
-                              <i class="now-ui-icons tech_mobile"></i> Signup Page
-                </a>
+                <%=link_to "A propos de nous", aboutus_path, :class=>"dropdown-item" %>
+                <%=link_to "Contactez nous", contact_path, :class=>"dropdown-item" %>
+                <%=link_to "Nos sites", portfolio_path, :class=>"dropdown-item" %>
+
               </div>
             </li>
           </ul>
@@ -101,70 +84,48 @@
 
     <%= yield %>
 
-    <footer class="footer footer-big" data-background-color="black">
+    <footer class="footer footer-big" data-background-color="white">
       <div class="container">
         <div class="content">
-          <div class="row">
+          <div class="row align-items-start">
             <div class="col-md-2">
-              <h5>About Us</h5>
+              <h5>Notre entreprise</h5>
               <ul class="links-vertical">
                 <li>
-                  <a href="#pablo" class="text-muted">Blog</a>
+                  <%=link_to "A propos de nous", aboutus_path, :class=>"text-muted" %>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">About Us</a>
+                  <%=link_to "Contactez nous", contact_path, :class=>"text-muted" %>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">Presentation</a>
+                  <%=link_to "Nos sites", portfolio_path, :class=>"text-muted" %>
                 </li>
                 <li>
-                  <a href="#pablo" class="text-muted">Contact Us</a>
+                  <%=link_to "Notre équipe", aboutus_path, :class=>"text-muted" %>
+                </li>
+                <li>
+                  <%=link_to "Nos prix", root_path, :class=>"text-muted" %>
+                </li>
+                <li>
+                  <%=link_to "Mentions légales", contact_path, :class=>"text-muted" %>
                 </li>
               </ul>
             </div>
-            <div class="col-md-2">
-              <h5>Market</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="#pablo" class="text-muted">Sales FAQ</a>
-                </li>
-                <li>
-                  <a href="#pablo" class="text-muted">How to Register</a>
-                </li>
-                <li>
-                  <a href="#pablo" class="text-muted">Sell Goods</a>
-                </li>
-                <li>
-                    <a href="#pablo" class="text-muted">
-                                    Receive Payment
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#pablo" class="text-muted">
-                                    Transactions Issues
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#pablo" class="text-muted">
-                                    Affiliates Program
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Social Feed</h5>
+
+                    <div class="col-md-6">
+                        <h5>Que faisons nous?</h5>
                         <div class="social-feed">
                             <div class="feed-line">
-                                <i class="fa fa-twitter"></i>
-                                <p>How to handle ethical disagreements with your clients.</p>
+
+                                <p>Nous sommes une entreprise de gestion et rélisation de projets capable du meilleur, mais réalisant le pire</p>
                             </div>
                             <div class="feed-line">
-                                <i class="fa fa-twitter"></i>
-                                <p>The tangible benefits of designing at 1x pixel density.</p>
+
+                                <p>Nous vous créons un site en deux semaines pour presque rien!</p>
                             </div>
                             <div class="feed-line">
-                                <i class="fa fa-facebook-square"></i>
-                                <p>A collection of 25 stunning sites that you can use for inspiration.</p>
+
+                                <p>et oui, notre boss nous fait travailler comme les gnomes du père Noël...</p>
                             </div>
                         </div>
                     </div>
@@ -210,20 +171,10 @@
                 </div>
             </div>
             <hr />
-            <div class="copyright">
-                Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Creative Tim All Rights Reserved.
-            </div>
+            
         </div>
     </footer>
   </body>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
-    });
-</script>
+
 </html>

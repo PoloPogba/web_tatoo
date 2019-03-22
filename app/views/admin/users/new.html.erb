@@ -1,0 +1,44 @@
+</br></br></br></br></br></br></br></br></br></br>
+
+<div class="row m-3">
+	<% if @user.errors.any? %>
+	<div class="alert alert-danger" role="alert">
+	  <p>Nous n'avons pas réussi à créer l'utilisateur pour la (ou les) raison(s) suivante(s) :</p>
+	  <ul>
+	    <% @user.errors.full_messages.each do |message| %>
+	      <li><%= message %></li>
+	    <% end %>
+	  </ul>
+	  </div>
+      
+	<% end %>
+</div>
+<center>
+<div class="row">
+                
+                  <%= form_tag(action:"create", method: "post") do %>
+                  <%= label_tag(:last_name, "Nom:") %>
+                  <%= text_field_tag(:last_name, "", :class => 'form-control') %>
+                  <br>
+                  <%= label_tag(:first_name, "Prénom:") %>
+                  <%= text_field_tag(:first_name, "", :class => 'form-control') %>
+                  <br>
+                  <%= label_tag(:email, "Email:") %>
+                  <%= text_field_tag(:email, "", :class => 'form-control') %>
+                  <br>
+                  <%= label_tag(:role, "Role:") %>
+                  <%= text_field_tag(:role, "", :class => 'form-control') %>
+                  <br>
+                  <%= label_tag(:password, "Password:") %>
+		          <%= password_field_tag(:password, "", :class => 'form-control') %>
+		          <br>
+                  <%= label_tag(:password_confirmation, "Confirmation du Mot de Passe:") %>
+		          <%= password_field_tag(:password_confirmation, "", :class => 'form-control') %>
+		          <br>
+                  <%= submit_tag("Créer", :class => "btn btn-blue") %>
+                  </div>
+        <% end %>
+
+
+<div class="row">
+</center>

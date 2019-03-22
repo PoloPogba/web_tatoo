@@ -1,0 +1,36 @@
+<div class="page-header page-header-small section-image">
+
+            <%= image_tag "cover-code.jpg", :class=>"page-header-image" %>
+            <div class="content-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h1 class="title">Paiement</h1>
+                        <h6>Paiement sécurisé à travers Stripe</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="content">
+
+            <div class="container">
+              <h5><%= link_to "Mon Profil", show_user_path, :style=>"color:blue" %></h5>
+              <div class="col-md-3 ml-auto mr-auto">
+  <div class="card card-body">
+    <center>
+    <h5>Vous avez payé</h5>
+    <p>Mercu pour votre confiance et à bientôt!</p>
+<%= form_tag formfuction_charges_path(current_user.id) do %>
+  <article>
+
+    <label class="amount">
+      <span>Montant: $<%= find_price %></span>
+    </label>
+  </article>
+
+</center>
+</div>
+</div>
+</div>
+</div>

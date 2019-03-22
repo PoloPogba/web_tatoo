@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
-    def index 
-        
+    def index
+
     end
 
  def new
@@ -10,29 +10,29 @@ class GuestsController < ApplicationController
     def show
         @id_guest = Guest.find(params['id'])
     end
-   
-    def create 
+
+    def create
 
        @number = params[:number]
        @last_guest_id = Guest.last.id
-       
-       
-        @guest = Guest.new 
+
+
+        @guest = Guest.new
         @form = Form.new
         @form.guest_id = @last_guest_id +1
         @form.who_id = @number
-        
-       
-        
+
+
+
          if @guest.save && @form.save
              redirect_to guest_path(@guest.id)
-         else 
+         else
              redirect_to root_path
 
- 
+
          end
         end
-    
-       
-    
+
+
+
 end
