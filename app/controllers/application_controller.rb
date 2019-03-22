@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
     include FormsHelper
     include NotHelper 
     include FindHelper
+    include ChargesHelper
 
 
 
