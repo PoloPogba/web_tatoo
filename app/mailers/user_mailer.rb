@@ -6,9 +6,9 @@ class UserMailer < ApplicationMailer
     @user = user 
 
     #on définit une variable @url qu'on utilisera dans la view d’e-mail
-    @url  = 'https://leprogrammer.herokuapp.com'
+    @url  = 'https://lesitefrancais.herokuapp.com/'
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
-    mail(to: @user.email, subject: 'Bienvenue chez LeProgrammer.fr!') 
+    mail(to: @user.email, subject: 'Bienvenue chez lesitefrancais !') 
   end
 end
