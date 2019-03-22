@@ -36,7 +36,7 @@ Une stratégie de marketing va être mise en place pour devenir l’entreprise d
 
 Made with ♥ by ; 
 
-**Aleks**, __manager__ : Elle manage l'impossible, hors tu ne pourra pas la manager.
-**Paul**, __back-end warrior__ : Si t'est pas content avec son back end, il te proposera un macaron et tu partira content.
-**Martin**, __spammer__ : Il fume, il boit son café, il code des mailers de spam.
-**Yannick**, __designer__ : Il est talentueux, il est persistant, on le décrit comme "Deutsche Qualität"
+**Aleks**, __manager__ : Elle manage l'impossible, hors tu ne pourra pas la manager.   
+**Paul**, __back-end warrior__ : Si t'est pas content avec son back end, il te proposera un macaron et tu partira content.   
+**Martin**, __spammer__ : Il fume, il boit son café, il code des mailers de spam.   
+**Yannick**, __designer__ : Il est talentueux, il est persistant, on le décrit comme "Deutsche Qualität"   
