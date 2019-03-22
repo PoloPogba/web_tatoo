@@ -1,5 +1,7 @@
 class RegistrationsController < Devise::RegistrationsController
     after_action :add_formuser
+    before_action :delete_form_guest
+    
     protected 
 
     def add_formuser 
@@ -7,9 +9,11 @@ class RegistrationsController < Devise::RegistrationsController
             @id_guest = Guest.last.id
             @id_user = User.last.id
             @form = Form.find_by(guest_id: @id_guest)
-            if @form.user_id == nil
-            @form.user_id = @id_user
-            @form.save
+            if @form 
+                if @form.user_id == nil
+                    @form.user_id = current_user.id
+                    @form.save
+                end
             end
             
            
@@ -17,16 +21,34 @@ class RegistrationsController < Devise::RegistrationsController
         end
     end
 
+
+    
+
+    def delete_form_guest
+        @empty_forms = Form.where(type_id: nil )
+        @empty_forms.each do |form|
+            form.destroy
+        end
+    end
+
+
+   
+
+    
+
+
+   
+
     
    
     protected
 
     def after_sign_up_path_for(resource)
-        @form = Form.find_by(user_id: current_user.id)
-        if @form == nil 
-        root_path
+        
+        if form?
+            formfuction_path(current_user.id)  
         else 
-        formfuction_path(current_user.id)  
+            root_path
         end
     end
 
