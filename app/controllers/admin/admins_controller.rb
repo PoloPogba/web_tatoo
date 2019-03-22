@@ -3,21 +3,21 @@ module Admin
 
 class AdminsController < ApplicationController
 
-    def index 
+    def index
         @users = User.all
         @formfuctions = Formfuction.all
+        @charge = Charge.all
+    end
 
-    end 
-
-    def new 
+    def new
 
     end
 
-    def create 
+    def create
 
     end
 
-    def show 
+    def show
 
     end
 

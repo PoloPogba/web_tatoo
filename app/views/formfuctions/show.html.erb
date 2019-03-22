@@ -118,14 +118,14 @@
 
                  <td class="td-number">
                   <%= form_tag  formfuctions_path(:number => @i), method: :post, remote: true, :authenticity_token => true do %>
-                  <%= submit_tag '+', disabled: true, class:"btn btn-info" %>
+                  <%= submit_tag '+', disabled: true, class:"btn btn-info superAjax" %>
                   <% end %>
 
                 </td>
                 <td class="td-name">
 
                   <%= form_tag  formfuction_path(:number => @i), method: "delete", remote: true, :authenticity_token => true do %>
-                  <%= submit_tag '-', class:"btn btn-danger" %>
+                  <%= submit_tag '-', class:"btn btn-danger superAjax" %>
                   <% end %>
                 </td>
                 <td class="td-number">
@@ -166,15 +166,3 @@
 </table>
 </div>
 </div>
-
-
-<script>
-
-$(document).on('click','.superAjax',function(){
-alert('U clicked on table');
-});
-
-//put code here
-
-
-</script>

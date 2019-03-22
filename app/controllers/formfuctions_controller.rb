@@ -57,12 +57,5 @@ class FormfuctionsController < ApplicationController
     
    
    
-    # def update 
-
-    #    @id_comments = Comment.find(params["id"])
-     #   comment_params = params.require(:comment).permit(:content)
-      #  @id_comments.update(comment_params)
-       # redirect_to gossip_path($id_gossip)
-        
-        #end
+    
 end

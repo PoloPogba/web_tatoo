@@ -1,8 +1,98 @@
-</br></br></br></br></br></br></br></br>
+
+<div class="pricing-5 section-pricing-5 " id="pricing-5">
+                <div class="container">
+                  <h2 class="title">Choose a plan for your next project</h2>
+                  <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                      <li class="nav-item">
+
+                          <%= link_to "Gérer les utilisateurs", admin_admins_users_path, :class=>"nav-link active show" %>
+                      </li>
+                      <li class="nav-item">
+
+                          <%= link_to "Gérer les devis", admin_admins_formfuctions_path, :class=>"nav-link" %>
+                      </li>
+                  </ul>
+                  <p class="description">You have Free Unlimited Updates and Premium Support on each package. You also have 20 days to request a refund if you're not happy with your purchase.</p>
+                    <div class="row">
 
 
-<%= link_to "Gérer les utilisateurs", admin_admins_users_path %>
 
-<%= link_to "Gérer les devis", admin_admins_formfuctions_path %>
+                        <div class="col-md-10 ">
+                          <div class="row">
+
+                                  <h6>Simple With Actions</h6>
+
+                                          <div class="table-responsive">
+                                              <table class="table">
+                                                  <thead class="">
+                                                      <tr><th class="text-center">
+                                                          #
+                                                      </th>
+                                                      <th>
+                                                          Prénom
+                                                      </th>
+                                                      <th>
+                                                          Nom
+                                                      </th>
+                                                      <th>
+                                                          Entreprise
+                                                      </th>
+
+                                                      <th class="text-center">
+                                                          email
+                                                      </th>
+                                                      <th class="text-right">
+                                                          Devis Payé?
+                                                      </th>
+                                                      <th class="text-right">
+                                                          Actions
+                                                      </th>
+                                                  </tr></thead>
+                                                  <tbody>
+                                                      <tr>
+                                                        <% @users.each do |u| %>
+                                                          <td class="text-center">
+                                                              <%= u.id %>
+                                                          </td>
+                                                          <td>
+                                                              <%= u.first_name %>
+                                                          </td>
+                                                          <td>
+                                                              <%= u.last_name %>
+                                                          </td>
+                                                          <td>
+                                                              <%= u.role %>
+                                                          </td>
+
+                                                          <td class="text-center">
+                                                              <%= u.email %>
+                                                          </td>
+                                    <td class="text-right">
+                                          <%= @pay = Charge.find_by(user_id: u.id) %>
+                                          <% if @pay %>
+                                          <%= "True" %>
+                                          <% else %>
+                                          <%= "False" %>
+                                          <%end%>
+                                      </td>
+                                                          <td class="text-right">
+
+                                                              <%=link_to "Utilisateur", admin_admins_users_path, :class=>"btn btn-info" %>
+
+                                                            <%=link_to "Devis", admin_admins_formfuctions_path, :class=>"btn btn-danger"%>
+                                                          </td>
+                                                      </tr>
+<%end%>
+
+                                                  </tbody>
+                                              </table>
+                                          </div>
+                                      </div>
+                                  </div>
 
 
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>

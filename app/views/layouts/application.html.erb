@@ -29,17 +29,17 @@
           </button>
         </div>
         <div class="collapse navbar-collapse ">
-          
-          
+
+
           <%= link_to "Home", root_path %>
-          
+
           <%if user_signed_in? && current_user.role === "admin" %>
-         
+
           <%= link_to "Espace Administrateur", admin_admins_admins_path %>
-         
+
           <%end%>
-          
-          
+
+
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
 
 
         <%if user_signed_in? %>
-                       <%= link_to "Voir mon devis", formfuction_path(current_user.id), :class=>"dropdown-item" %>
+                       
                        <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
                        <%else %>
                        <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>
@@ -84,7 +84,7 @@
 
     <%= yield %>
 
-    <footer class="footer footer-big" data-background-color="white">
+    <footer class="footer footer-big shadow_footer" data-background-color="white">
       <div class="container">
         <div class="content">
           <div class="row align-items-start">
@@ -171,7 +171,7 @@
                 </div>
             </div>
             <hr />
-            
+
         </div>
     </footer>
   </body>

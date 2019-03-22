@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
     include FindingHelper
     include PriceHelper
     include FormsHelper
+    include ChargesHelper
 
 
 
