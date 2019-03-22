@@ -17,7 +17,7 @@
                             <div class="card-body">
                               <div class="input-group form-group-no-border input-lg">
                                   <div class="input-group-prepend">
-                                      <span class="input-group-text">  <%= f.label :first_name  %></span>
+                                      <span class="input-group-text">  <%= f.label :Prénom  %></span>
                                   </div>
 
                                     <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name", :class=>"form-control"%>
@@ -28,7 +28,7 @@
 
                               <div class="input-group form-group-no-border input-lg">
                                   <div class="input-group-prepend">
-                                      <span class="input-group-text">  <%= f.label :last_name  %></span>
+                                      <span class="input-group-text">  <%= f.label :Nom  %></span>
                                   </div>
 
                                     <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name", :class=>"form-control"%>
@@ -59,9 +59,7 @@
 
 
                                 </div>
-                                <% if @minimum_password_length %>
-                                <em>(<%= @minimum_password_length %> characters minimum)</em>
-                                <% end %>
+                                
 
 
                                 <div class="input-group form-group-no-border input-lg">
