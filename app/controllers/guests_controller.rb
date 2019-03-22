@@ -1,8 +1,9 @@
 class GuestsController < ApplicationController
+   
+    
+    
     def index
-        if user_signed_in?
-        @not_form = Form.find_by(user_id: current_user.id)
-        end
+        
 
     end
 
@@ -24,6 +25,9 @@ class GuestsController < ApplicationController
         @form = Form.new
         @form.guest_id = @last_guest_id +1
         @form.who_id = @number
+        if user_signed_in?
+            @form.user_id = current_user.id
+        end
 
 
 
@@ -36,6 +40,7 @@ class GuestsController < ApplicationController
          end
         end
 
+      
 
 
 end
