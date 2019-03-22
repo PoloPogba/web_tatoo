@@ -56,7 +56,7 @@
 
 
         <%if user_signed_in? %>
-                       <%= link_to "Voir mon devis", formfuction_path(current_user.id), :class=>"dropdown-item" %>
+                       
                        <%= link_to 'Deconnexion', destroy_user_session_path, :method => "delete", :class=>"dropdown-item" %>
                        <%else %>
                        <%=link_to "Se connecter", new_user_session_path, :class=>"dropdown-item" %>

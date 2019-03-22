@@ -1,5 +1,8 @@
 class GuestsController < ApplicationController
     def index
+        if user_signed_in?
+        @not_form = Form.find_by(user_id: current_user.id)
+        end
 
     end
 

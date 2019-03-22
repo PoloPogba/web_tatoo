@@ -8,9 +8,13 @@
           <h4 class="description">Lesitefrancais vous propose de bons programmeurs et designer, et suit de près la réalisation de votre site internet jusqu'à la fin.</h4>
         </div>
       </div>
+      
+      <% if !user_signed_in? || @not_form == true  %> 
+      
       <div class="col-md-5 mx-auto"  >
         <div class="container">
           <h2 style="margin:0em">J'ai besoin d'un site pour:</h2>
+          
           <%= form_tag guests_path(:number => 1), method: :post do %>
           <%= submit_tag 'Moi Même', :class=>"btn btn-info btn-round btn-lg", :id=>"btnhome1", :style=>"position: relative;  left: 110%; overflow: hidden; display: none;" %>
           <% end %>
@@ -22,9 +26,23 @@
           <%= form_tag guests_path(:number => 3), method: :post do %>
           <%= submit_tag 'Mon Association ', :class=>"btn btn-info btn-round btn-lg ", :id=>"btnhome3", :style=>"position: relative;  left: 110%; overflow: hidden; display: none;" %>
           <% end %>
+
+         
         </div>
       </div>
+     <%else%> 
+
+        <div class="col-md-5 mx-auto"  >
+        <div class="container">
+
+          <%= link_to "Voir mon devis", formfuction_path(current_user.id), :class=>"btn btn-info btn-round btn-lg " %>
+
+          <%end%>
+          </div>
+          </div>
+    
     </div>
+
   </div>
 </div>
 
